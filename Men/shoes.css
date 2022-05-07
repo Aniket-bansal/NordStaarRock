@@ -1,0 +1,199 @@
+#sidebar{
+    width: 200px;
+    height: 600px;
+   
+    overflow: scroll;
+}
+#products{
+ 
+    width: 1130px;
+    
+    margin-left: 220px;
+    margin-top: -1000px;
+}
+#products>h1{
+    margin-top: 400px;
+}
+#images{
+   margin-top: -20px;
+    height: 400px;
+    width: 100%;
+   
+   
+}
+#images>img{
+    width: 1100px;
+}
+#imga{
+    color: black;
+    font-size: 18px;
+    margin-left: 0px;
+    font-family: 'Inter', sans-serif;
+}
+#imgb{
+    color:black;
+    font-size: 18px;
+    margin-left: 150px;
+    font-family: 'Inter', sans-serif;
+}
+#men{
+    display: grid;
+    grid-template-columns: repeat(4,1fr); 
+    height: 600px;
+    overflow: scroll;
+}
+#men>div{
+  
+    height: 750px;
+   
+}
+
+#men img{
+    height: 300px;
+    width: 200px;
+    border-radius: 8px;
+}
+ #shoesImages{
+     border:  1px solid;
+ }
+
+#men h2,p{
+    font-family: 'Inter', sans-serif; 
+}
+.button{
+    height: 40px;
+    width: 180px;
+    color: teal;
+   margin-left: 20px;
+   border-color: teal ;
+   background-color: white;
+   border-color: grey;
+   border-width: 1px;
+   cursor:  pointer;
+   
+}
+.button:hover{
+    width: 200px;
+    border-color: teal;
+}
+.free{
+    color: grey;
+    text-align: center;
+    font-family: 'Inter', sans-serif; 
+    
+}
+p{
+    color: grey;
+}
+.h2{
+    color: teal;
+}
+#signi{
+    margin-top: 200px;
+}
+#signi>img{
+    height: 200px;
+    width: 100%;
+    cursor: pointer;
+}
+#get{
+    height: 50px;
+    width: 100%;
+    
+    display: flex;
+    margin-top: 50px;
+}
+h5{
+    font-family: 'Inter', sans-serif;
+    color: grey;
+    margin-left: 800px;
+}
+input{
+    height: 40px;
+    width: 200px;
+    border-color: grey;
+    border-width: 1px;
+    margin-top: 10px;
+}
+#button{
+    height: 40px;
+    width: 200px;
+    background-color: #08a;
+    color: white;
+    margin-top: 10px;
+    border-width: 1px;
+    border-color: teal;
+    margin-left: 5px;
+}
+
+#bottom{
+    height: 500px;
+    width: 100%;
+    background-color: snow;
+    margin-top: 20px;
+    display: flex;
+}
+#a1{
+    height: 100%;
+     width: 14%;
+    margin-top: 50px;
+}
+#a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 20px;
+    font-family: 'Inter', sans-serif;
+}
+#b{
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    margin-left: 20px;
+    font-family: 'Inter', sans-serif;
+}
+#a:hover{
+    text-decoration: underline;
+    color: teal;
+}
+#b:hover{
+    text-decoration: underline;
+    color: teal;
+}
+#a11{
+    display: flex;
+    margin-top: 50px;
+}
+#a11 img{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+#top{
+    height: 60px;
+    width: 60px;
+    margin-left: 150px;
+     cursor: pointer;
+     margin-top: 30px;
+}
+#sidebar div{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    cursor:  pointer;
+} 
+
+#sidebar div:hover{
+    text-decoration: underline;
+    color: teal;
+}
+#line{
+    border: 1px solid grey;
+    width: 100%;
+}
+
