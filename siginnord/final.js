@@ -5,5 +5,5 @@ document.querySelector("form").addEventListener("submit",entermobilefunction);
 var Mobile=JSON.parse(localStorage.getItem("mobile"))||[];
 function entermobilefunction(){
    event.preventDefault();
-   window.location.href="mobileverify.html"
+    window.location.href="../index.html"
 }
