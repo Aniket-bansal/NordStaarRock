@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@300&family=Poppins:wght@300&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="activewear.css">
+    <script src="https://kit.fontawesome.com/76c506f074.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./navbar.css">    <style>
+        .main{
+            margin: auto;
+            /* border: 1px solid black; */
+            width: 22%;
+            /* margin-top: -220px; */
+            margin-bottom: 50px;
+        }
+        .welcome{
+            display: flex;
+        }
+        .welcome h2{
+            font-weight: lighter;
+            margin-bottom: 30px;
+        }
+        .twoname{
+            display: flex;
+            gap: 30px;
+        }
+        .twoname h3{
+            font-weight: lighter;
+            color: gray;
+        }
+        .inner{
+            margin-top: -15px;
+        }
+        .inner h6{
+            margin-bottom: -25px;
+            font-size: 5px;
+            margin-top: 30px;
+            font-weight: lighter;
+        }
+        .inner h3{
+            font-size: 25px;
+            margin-top: 18px;
+            font-weight: lighter;
+        }
+       .main p{
+            margin-top: -10px;
+            font-family: sans-serif;
+            font-size: 13px;
+            color:rgb(138, 137, 137) ;
+        }
+        .sub{
+            margin-top: -20px;
+        }  
+     .welcome h2{
+            font-weight: bolder;
+            font-family: sans-serif;
+            font-size: 20px;
+        }   
+        .next input{
+            background-color: #00819d ;
+            color: white;
+            border: none;
+        }  
+        .inner img{
+            height: 20px;
+            margin-top: 33px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div class="main">
+        <div class="welcome">
+            <h2 class="wel">Welcome,</h2>
+            <h2 id="name"></h2>
+        </div>
+        <p>Use your new account to shop at:</p>
+            <div class="sub">
+                <div class="twoname">
+                    <h3>NORDSTROM</h3>
+                    <div class="inner">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Nordstrom_Rack_logo_2021.svg/512px-Nordstrom_Rack_logo_2021.svg.png?20211225005334" alt="">
+                    </div>
+            </div>
+            </div>   
+      <form action="">
+        <div class="next">
+            <input type="submit" value="Shop Now">
+         </div>
+      </form>
+</div>
+<div id="bottom"></div>
+</body>
+</html>
+<script src="./index.js" type="module"></script>
+<script src="./final.js"></script>
+<script type="module">
+    import bottom from "..//components/bottom.js" ;
+ document.querySelector("#bottom").innerHTML=bottom()
+ document.querySelector("#signim").addEventListener("click",img) ;
+ function img() {
+  window.location.href="signup.html"
+ }
+
+ document.querySelector("#top").addEventListener("click",topFN) ;
+ function topFN() {
+     window.location.href="activewear.html"
+ }
+</script>
