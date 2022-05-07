@@ -191,10 +191,6 @@ document.querySelector('.signin_close').addEventListener("click", function() {
 	document.querySelector('.signin_modal').style.display = "none";
 });
 
-// reload to Home
-
-
-
 // search item on search page
 
 const url ="https://fakestoreapi.com/products"
@@ -205,3 +201,26 @@ fetch(url).then(function(res){
 .then(function(res){
   console.log(res)
 })
+
+
+
+
+// Signin
+
+var email = JSON.parse(localStorage.getItem('emailid'))
+var pass = JSON.parse(localStorage.getItem('information'))
+
+document.getElementById("signin_redirect").addEventListener('click',signin)
+
+function signin(){
+  var user_email = docment.getElementById("user_email").value;
+  var user_pass = document.getElementById("password").value;
+  if(user_email == email.email && user_pass == information.password)
+  {
+    window.location = "#"
+    document.getElementById("signin").innerText= "Hello" + information.first;
+  }
+  else{
+    alert("Please Enter correct credentials")
+  }
+}
