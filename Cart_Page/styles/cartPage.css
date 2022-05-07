@@ -1,0 +1,113 @@
+#div1{
+    border: 1px solid red;
+}
+h4{
+    text-align: center;
+    margin-top: 10px;
+}
+#bag{
+    width: 80%;
+    margin: auto;
+}
+.img11{
+    width: 100px;
+    height: 150px;
+}
+.img11:hover{
+    cursor: pointer;
+}
+#container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    gap: 10px;
+}
+.hr{
+    width: 80%;
+}
+
+.jtIbK{
+    color: teal;
+}
+#box2{
+    margin-left: -170px;
+}
+.old{
+    text-decoration: line-through;
+}
+#item-quantity{
+    border: none;
+    height: 30px;
+    width: 30px;
+    color: teal;
+}
+#item-quantity:hover{
+    cursor: pointer;
+}
+#removeBtn:hover{
+    cursor: pointer;
+}
+#itemCount{
+    margin-top: -110px;
+    display: flex;
+    width: 80%;
+    /* border: 1px solid green; */
+    margin: auto;
+}
+#itemCount>div{
+    border: 1px solid grey;
+    height: 40px;
+    width: 220px;
+}
+#itemCount>div:hover{
+    background-color: gray;
+    color: white;
+}
+#removeBtn{
+    border: none;
+    background-color: white;
+    color: teal;
+}
+.save_class{
+width: 80%;
+margin: auto;
+margin-top: 20px;
+}
+#payment_Box{
+    margin: auto;
+    /* border: 1px solid rebeccapurple; */
+    height: 400px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* gap: 240px; */
+    justify-content: space-evenly;
+}
+#imgPayment{
+    display: flex;
+    height: 25px;
+    width: 10px;
+}
+#payIn_Box1,#payIn_Box2,#payIn_Box3,#payIn_Box4{
+    display: flex;
+    justify-content: space-between;
+}
+#pay_Box{
+    width: 300px;
+    margin-left: 110px;
+}
+#check_out{
+    width: 300px;
+    height: 50px;
+    background-color: teal;
+    border: none;
+    color: white;
+}
+#check_out:hover{
+    background-color: white;
+    color: teal;
+    border: 1px solid teal;
+}
