@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+  src="https://kit.fontawesome.com/24c494a6b6.js"
+  crossorigin="anonymous"
+></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@300&family=Poppins:wght@300&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  
+
+
+  <link rel="stylesheet" href="activewear.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <style>
+        h2{
+            font-weight: lighter;
+        }
+        .main{
+            width:22% ;
+            margin: auto;
+            /* margin-top: -220px; */
+        }
+        h4{
+            margin-bottom: -10px;
+            font-weight: lighter;
+            color: rgb(61, 60, 60);
+            font-size: 12px;
+
+        }
+        .container>h4{
+            font-weight: 900;
+        }
+        input{
+            width: 97%;
+            height: 34px;
+        }
+        .showemail{
+          display: flex;
+        }
+        .showemail a{
+          margin-left: 80px;
+          margin-top: 15px;
+        }
+        .createaccount input{
+          background-color:#00819d ;
+          width: 100%;
+          height: 34px;
+          color: white;
+        }
+        .ic1{
+          display: flex;
+          gap: 15px;
+          margin-bottom: 10px;
+        }
+        .ic1 h4{
+          margin-top: 2px;
+        }
+       .ic1 i{
+          color: gray;
+        }
+        .main p{
+          color: black;
+        }
+    </style>
+</head>
+<body>
+  <div id="navbar"></div>
+  <div class="main">
+      <h2>Create Account</h2>
+     <div class="ic1">
+      <i class="fa-solid fa-credit-card"></i>
+      <h4>Check out faster</h4>
+     </div>
+     <div class="ic1">
+      <i class="fa-solid fa-truck"></i>
+      <h4>Track orders easily</h4>
+     </div>
+      <div class="ic1">
+        <i class="fa-regular fa-bag-shopping"></i>
+        <h4>Use one sign-in across our brands</h4>
+      </div>
+        <h4>*Required</h4>
+        <div class="container">
+            <h4>Email</h4>
+            <div class="showemail">
+              <p id="your"></p>
+              <a href="signin.html">Edit</a>
+            </div>
+       <form action="">
+          <div class="firstname">
+            <p>First name*</p>
+            <input type="text" id="first">
+          </div>
+          <div class="lastname">
+            <p>Last name*</p>
+            <input type="text" id="last">
+          </div>
+          <div class="create">
+            <p>Create password *</p>
+            <input type="password" id="password"><a href="">show</a>
+          </div>
+          <p>By creating an account, you agree to our Privacy Policy and Terms & Conditions.</p>
+           <div class="createaccount">
+            <input type="submit" value="Create Account">
+           </div>
+        </form>
+      
+        </div>
+  </div>
+  <div class="container"></div>
+  <div id="bottom"></div> 
+</body>
+</html>
+<script src="./createaccount.js" ></script>
+<script src="./index.js" type="module"></script>
+<script type="module">
+  import bottom from "..//components/bottom.js" ;
+document.querySelector("#bottom").innerHTML=bottom()
+document.querySelector("#signim").addEventListener("click",img) ;
+function img() {
+window.location.href="signup.html"
+}
+
+document.querySelector("#top").addEventListener("click",topFN) ;
+function topFN() {
+   window.location.href="activewear.html"
+}
+</script>
