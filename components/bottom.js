@@ -1,3 +1,4 @@
+
 function bottom () {
     return `
     <div id="a1">
@@ -67,4 +68,4 @@ function bottom () {
 `
 }
 
-export {bottom};
+export default bottom;

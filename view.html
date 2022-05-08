@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nordstrom Rack: Shop Clothes, Shoes, Jewelry, Beauty and Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@300&family=Poppins:wght@300&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="view.css">
+</head>
+<body>
+    
+    <div id="view">
+        
+
+    </div>
+
+    
+
+</body>
+</html><script type="module">
+   let view = JSON.parse(localStorage.getItem("men")) ;
+   console.log(view) ;
+
+   import Select from "./select.js" ;
+   
+
+   let container=document.querySelector("#view") ;
+
+    
+     view.forEach(( {imgUrl,category,title,pre_price,free })=>{
+                             let div1 = document.createElement("div") ;
+                             div1.setAttribute('id','img') ;
+
+                             let img = document.createElement('img') ;
+                             img.setAttribute('class','product')
+                             let ca = document.createElement('h3') ;
+                             let t = document.createElement('h4') ;
+                             let p = document.createElement("h1") ;
+                             let f = document.createElement('p') ;
+                             let star = document.createElement('img') ;
+
+                             let sz = document.createElement('h4') ;
+                             let clr = document.createElement("h4") ;
+                             let del = document.createElement('h4') ;
+                             del.setAttribute("id",'deleivery')
+
+                             star.setAttribute('class','star') ;
+                              let sel = document.createElement("div");
+                              sel.innerHTML=Select();
+
+                              let x = document.createElement("h1");
+                              x.innerText="X";
+                              x.setAttribute('class','x') ;
+                              x.addEventListener('click',xFN) ;
+                              function xFN(){
+                                  window.location.href="men.html"
+                              }
+
+                              let add = document.createElement("button") ;
+                              add.innerText="Add To Bag" ;
+                              add.addEventListener("click",addFN);
+
+                             
+                             
+
+                               sz.innerHTML="Size: Medium" ;
+                               clr.innerText="Color: Blue" ;
+                               del.innerText= `Deleivery By: ${new Date()}` ;
+
+                             img.src=imgUrl;
+                             ca.innerText=category;
+                             t.innerText=title;
+                             p.innerText=`₹${pre_price}  (50% off)`;
+                             f.innerText="Free Shipping on Shopping Above ₹50"
+                             star.src="https://png.pngitem.com/pimgs/s/398-3983504_transparent-alec-lightwood-png-1-out-of-5.png"
+
+                             var oArr = [] ;
+
+                                    function addFN() {
+                                        var obj = {
+                                            
+                                            catagory:category,
+                                            title:title,
+                                            imgUrl:imgUrl,
+                                            size: "Medium",
+                                            color: "Blue",
+                                            item: "6317870",
+                                            new_price: "12.64",
+                                            pre_price:pre_price,
+                                            delivery: new Date()
+                                        }
+                                        oArr.push(obj) ;
+                                        console.log(oArr) ;
+                                        localStorage.setItem("cartData",JSON.stringify(oArr));
+                                        alert("Product Added In Your bag") ;
+                                        add.style.backgroundColor="green" ;
+                                        add.innerText="Added To Your Bag"
+                                        let done = document.createElement("img") ;
+                                        done.src="https://c.tenor.com/BntXpMlrGuEAAAAC/check-correct.gif" ;
+                                        done.setAttribute("class",'done')
+                                        div1.append(done) ;
+
+                                        
+                                    }
+                              div1.append(img,star,ca,t,p,f,sel,sz,clr,add,x) ;
+                              container.append(div1)
+
+
+                              
+     })
+
+
+
+
+
+
+</script>
