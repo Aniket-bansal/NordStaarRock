@@ -1,0 +1,64 @@
+<html>
+    <head></head>
+    <style>
+        div {
+              line-height: 50px;
+              width: 400px;
+              height: 500px;
+              margin: auto;
+          }
+
+          input {
+              height: 40px;
+              width: 325px;
+              line-height: 10px;
+          }
+
+          label {
+              line-height: 40px;
+              text-align: left;
+          } 
+
+          button {
+              margin-top: 15px;
+              width: 325px;
+              height: 40px;
+              background-color: teal;
+              color: white;
+              font-weight: bold;
+          }
+
+          #otp {
+              height: 35px;
+              width: 180px;
+              margin-top: 10px;
+          }
+
+    </style>
+    <body>
+        <div>
+            <h1>OTP page</h1>
+            <label>OTP</label><br>
+            <input id="otp" type="number" placeholder="Enter your OTP number" /><br>
+            <button id="pay">Pay</button>
+        </div>
+    </body>
+</html>
+
+<script>
+    document.querySelector("#pay").addEventListener("click", payment);
+
+    function payment() {
+        var otp = document.querySelector("#otp").value;
+        if (otp === "1234") {
+            alert("payment successful");
+            window.location.href = "homePage.html"
+            //window.location.href = "homePage.html";
+        } else {
+            return alert("OTP is incorrect.");
+        }
+        //window.location.href = "homePage.html"
+    }
+    //window.location.href = "homePage.html"
+
+</script>

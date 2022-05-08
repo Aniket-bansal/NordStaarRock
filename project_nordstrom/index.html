@@ -1,0 +1,879 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                margin: 0;
+                width: 98%;
+                margin: auto;
+            }
+           
+            header {
+                height: 5%;
+                background-color: rgb(173, 4, 196);
+                color: white;
+                text-align: center;
+                justify-content: center;
+            }
+            #logo {
+                margin-top: 10%;
+            }
+            #logo2 {
+                display: flex;
+                margin-left: 70%;
+                gap: 42px;
+            }
+            #logo2 > p:first-child {
+                margin-top: 10%;
+            }
+            #logo3 {
+                border: none;
+                background-color: white;
+                cursor: pointer;
+            }
+            #logo3:hover {
+                border: none;
+                color: rgb(43, 66, 66);
+                cursor: pointer;
+                font-weight: bold;
+            }
+            .Div2 {
+                display: flex;
+                height: 55px;
+                width: 100%;
+            }
+            #paragraph {
+                display: flex;
+                justify-content: space-around;
+                height: 18px;
+                
+            }
+            #paragraph > button {
+                border: none;
+                background-color: white;
+            }
+            #paragraph > button:hover {
+                cursor: pointer;
+                border-bottom: 2px solid black;
+            }
+            #paragraph > button:first-child {
+                color: red;
+            }
+            #paragraph > button:first-child:hover {
+                border-bottom: 2px solid red;
+            }
+            #paragraph > button:last-child {
+                color: teal;
+            }
+            #paragraph > button:last-child:hover {
+                border-bottom: 2px solid teal;
+            }
+            h2 {
+                text-align: center;
+                color: rgb(37, 36, 36);
+            } 
+            /* h3 {
+                margin-top: 55px;
+            } */
+            .signInButton {
+                margin-left: 38%;
+                /* margin: auto; */
+                /* text-align: center; */
+                font-weight: bold;
+                width: 300px;
+                height: 50px;
+                color: teal;
+                cursor: pointer;
+                border: none;
+                border-color: teal;
+                border: 1px solid teal;
+            }
+            .signInButton:hover {
+                background-color: teal;
+                color: white;
+                border: none;
+            }
+            img {
+                cursor: pointer;
+                margin-top: 3%;
+                width: 100%;
+            }
+            .heading {
+                margin-top: -76px
+            }
+            .heading1 {
+                margin-top: 0px;
+                margin-left: 0px
+            }
+            .para {
+                display: flex;
+                text-decoration: underline;
+                cursor: pointer;
+                color: teal;
+                gap: 25px;
+                margin-top: -80px;
+                margin-left: -50px
+            }
+            .twoImage {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+            .twoImagepara {
+                margin-top: 0px;
+                margin-left: 0px;
+            }
+
+            p {
+                margin-left: 3.2rem;
+                margin-top: 5rem;
+            }
+
+            span:hover {
+                color: teal;
+                cursor: pointer;
+            }
+
+            .div {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-flow: row;
+                gap: 1.5rem;
+                justify-content: center;
+            }
+
+            .wrapper {
+                display: flex;
+                gap: 1.5rem;
+                /* flex-flow: column; */
+            }
+
+            .child-div {
+                height: 500px;
+                width: 230px;
+                background-color: white;
+                display: flex;
+                flex-flow: column;
+                /* gap: 1rem; */
+            }
+
+            .child-div:hover {
+               box-shadow: 0 7px 17px 0 rgb(23 84 116 / 18%);
+            }
+
+            .button {
+                width: 55px;
+                height: 35px;
+                background-color: white;
+                border-radius: 4px;
+                border: 1px solid teal;
+                color: teal;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+
+            .img {
+                width: 190px;
+                height: 500px;
+                margin: auto;
+                cursor: pointer;
+            }
+
+            .subtitle {
+                width: 225px;
+                height: 35px;
+                margin-left: 12px;
+                margin-top: 6px;
+                margin-bottom: 0px;
+                font-size: 13px;
+                font-family: sans-serif;
+                color: red;
+            }
+
+            .subtext {
+                width: 225px;
+                height: 35px;
+                margin-left: 12px;
+                margin-top: 6px;
+                margin-bottom: 0px;
+                font-size: 12px;
+            }
+
+            .subletter {
+                width: 225px;
+                height: 35px;
+                margin-left: 12px;
+                margin-top: 6px;
+                margin-bottom: 0px;
+                font-size: 13px;
+                font-family: sans-serif;
+            }
+
+            .subletter:hover{
+                color: teal;
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+            .price {
+                width: 90px;
+                height: 18px;
+                margin-left: 12px;
+                margin-top: 6px;
+                margin-bottom: 0px;
+                font-size: 13px;
+                color: red;
+            }
+            .lprice {
+                width: 90px;
+                height: 18px;
+                margin-left: 82px;
+                margin-top: -15px;
+                margin-bottom: 0px;
+                margin-bottom: 5px;
+                font-size: 13px;
+                color: rgb(66, 65, 65);
+                text-decoration-line: line-through;
+            }
+            
+            hr {
+                color: gray;
+                width: 1267px;
+            }
+           .wrapper1 {
+               display: flex;
+               width: 100%;
+               gap: 15px;
+           }
+           .x {
+               margin-top: 10px;
+           }
+           .y {
+               margin-top: 0px;
+               color: rgb(66, 66, 66);
+           }
+           .z {
+               margin-top: 0px;
+               color: teal;
+               text-decoration: underline;
+               cursor: pointer;
+           }
+           .para1 {
+               text-align: center;
+               margin-top: 0px;
+               color: rgb(58, 57, 57);
+           }
+           .wrapper4 {
+               display: flex;
+               width: 100%;
+               gap: 15px;
+               margin-top: 15px;
+               margin-bottom: 25px;
+           }
+           .button1 {
+                font-weight: bold;
+                width: 250px;
+                height: 30px;
+                color: teal;
+                cursor: pointer;
+                border: none;
+                border-color: teal;
+                border: 1px solid teal;
+           }
+           .button1:hover {
+                background-color: teal;
+                color: white;
+                border: none;
+           }
+           .table {
+               margin-left: 55px;
+               margin-bottom: 55px;
+           } 
+           .td {
+               cursor: pointer;
+           }
+           .td:hover {
+               color: teal;
+               text-decoration: underline;
+           }
+           .trending {
+               margin-top: 35px;
+               font-size: 28px;
+               margin-bottom: 0px;
+               color: rgb(37, 37, 37);
+           }
+           .tdf {
+               cursor: pointer;
+           }
+           .tdf:hover {
+                color: teal;
+                text-decoration: underline;
+           }
+
+
+           @media only screen and (min-width: 375px) and (max-width: 1100px) {
+                #logo2 {
+                    margin-left: 60%;
+                }
+                header {
+                    height: 8%;
+                }
+                
+            }
+            @media only screen and (min-width: 0px) and (max-width: 375px) {
+               
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div>
+            <header>
+                <h3>GET YOUR GIFTS IN TIME FOR CHRISTMAS 
+                    <span>
+                        Order by 5PM PT on 12/18 for expedited shipping.
+                    </span>
+                    <span>The Holiday Gift Shop</span>
+                </h3>
+            </header>
+        </div>
+        <div class="Div2">
+            <div>
+                <p id="logo">NORSTROMErack</p>
+            </div>
+            <div id="logo2">
+                <p>search</p>
+                <button id="logo3">Sign In</button>
+            </div>
+        </div>
+        <div id="paragraph">
+           <button>Holiday Gifts</button>
+           <button id="women">Women</button>
+           <button>Men</button>
+           <button>Kids</button>
+           <button>Shoes</button>
+           <button>Bags & Accessories</button>
+           <button>Home</button>
+           <button>Beauty</button>
+           <button>Clearance</button>
+           <button>Flash Events</button>
+        </div>
+        <h2>Convenient. Easy. Rack your style.</h2>
+        <button class="signInButton">sign In or Create an Account</button>
+        <img id="createImage" src="https://n.nordstrommedia.com/id/24c67dfb-a06f-4834-ac51-aef707765a79.jpeg?h=200&w=1334"
+        />
+        <img src="https://n.nordstrommedia.com/id/0854bcbe-21c4-4453-9b35-8b068e6c9d97.jpeg?h=720&w=1608" alt="">
+        <h3 class="heading">Perfect Presents for Women, Men & Kids</h3>
+        <p class="heading1">Shop the finds on everyone's wishlists.</p>
+        <div class="para">
+            <p>Gifts for Her</p>
+            <p>Gifts for Him</p>
+            <p>Gifts for Kids</p>
+            <p>The Holiday Gift Shop</p>
+        </div>
+        <h2>From Party Looks to Activewear to Gifts—Everything You Need for the Season!</h2>
+        <div class="twoImage"> 
+            <div>
+                <img id="imageClick1" width="100%"
+                src="https://n.nordstrommedia.com/id/84a823b3-f9da-42e5-bce8-3d4d7a12e570.jpeg?h=555&w=804" alt="">
+                <h3>Party Styles from $29.97</h3>
+                <p class="twoImagepara">We've got outfits for all your holiday occasions from Elodie & more.</p>
+                <div class="para">
+                    <p>Young Adult Dresses</p>
+                    <p>Cocktail & Party Dresses</p>
+                </div>
+            </div>
+            <div>
+                <img id="imageClick2" width="100%"
+                src="https://n.nordstrommedia.com/id/4726d517-6d61-4ca6-8b2c-56c55c9462a2.jpeg?h=555&w=804" alt="">
+                <h3>Activewear, Sneakers, Wellness & More</h3>
+                <p class="twoImagepara">For working out (or hanging out).</p>
+                <div class="para">
+                    <p>Shop Now</p>
+                    <p>Going Out</p>
+                </div>
+            </div>
+        </div>
+        <h3 class="trending">Trending now</h3>
+    </body>
+</html>
+<script>
+    document.querySelector("#logo3").addEventListener("click", signIn)
+    document.querySelector(".signInButton").addEventListener("click", signIn)
+    function signIn() {
+        window.location.href = "signIn.html"
+    } 
+
+    document.querySelector("#women").addEventListener("click", women)
+    function women() {
+        window.location.href = "women.html"
+    } 
+
+    // document.querySelector(".tdf").addEventListener("click", tdf)
+    // function tdf() {
+    //     window.location.href = "faq.html"
+    // } 
+    document.querySelector("#imageClick1").addEventListener("click", imgClick)
+    document.querySelector("#imageClick2").addEventListener("click", imgClick)
+    function imgClick() {
+        window.location.href = "cart.html"
+    }
+    var arr = [
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/35702adb-e6a0-4d75-afd2-fcff41d0d0fa.jpeg?q=45&dpr=2&h=365.31&w=230",
+            title: "Print Footie (Baby), Image",
+            subtitle: "New Markdown",
+            subtext: "NORDSTROM BABY",
+            subletter: "Print Footie (Baby)",
+            price: "$ 46.40",
+            lprice: "$ 46.87",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/f5e38d96-d0d1-4a84-a65d-889f0ad0759c.jpeg?q=45&dpr=2&h=365.31&w=230",
+            title: "SBL GNAPHALIUM POLYCEPHALUM DILUTION 1000 CH",
+            subtitle: "SBL GELSEMIUM SEMPERVIRENS",
+            subtext: "bottle of 30 ml Dilution",
+            subletter: "Print Footie (Baby)",
+            price: "$ 94.05",
+            lprice: "$ 95.00",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/0e97fc22-cd55-4255-91ee-59973d242ced.jpeg?q=45&dpr=2&h=365.31&w=230",
+            title: "MUSCLETECH HYDROXYCUT HARDCORE NEXT GEN CAPSULE ",
+            subtitle: "MUSCLETECH HYDROXYCUT HAR",
+            subtext: "bottle of 100 capsules",
+            subletter: "Print Footie (Baby)",
+            price: "Rs.2,969.01",
+            lprice: "Rs.2,999.00",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/91e7487d-a240-4da3-8aea-80b2b6c92e49.jpeg?q=45&dpr=2&h=365.31&w=230",
+            title: "DOLTOL GEL",
+            subtitle: "DOLTOL GEL",
+            subtext: "tube of 30 gm Gel",
+            price: "Rs.58.90",
+            lprice: "Rs.59.50",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/d9361715-9c18-42d1-a580-cefccdd23cfa.jpeg?q=45&dpr=2&h=365.31&w=230",
+            title: "TOSS K PASTE",
+            subtitle: "TOSS K PASTE…",
+            subtext: "tube of 50 gm Paste",
+            price: "Rs.74.25",
+            lprice: "Rs.75.00",
+        },
+    ]
+    let count = 0;
+    let body = document.querySelector("body");
+    let div = document.createElement("div");
+    div.setAttribute("class", "div");
+
+        var wrapper = document.createElement("div");
+        wrapper.setAttribute("class", "wrapper");
+        for(let index = 0; index < 5; index++) {
+            const childDiv = document.createElement("div");
+            childDiv.setAttribute("class", "child-div");
+
+
+            let img = document.createElement("img");
+            img.setAttribute("class", "img");
+            img.setAttribute("src", arr[count].image_url);
+            img.setAttribute("title", arr[count].title);
+            childDiv.append(img);
+
+            let subtitle = document.createElement("p");
+            subtitle.setAttribute("class", "subtitle");
+            subtitle.innerText = arr[count].subtitle;
+            childDiv.append(subtitle);
+
+            let subtext = document.createElement("p");
+            subtext.setAttribute("class", "subtext");
+            subtext.innerText = arr[count].subtext;
+            childDiv.append(subtext);
+
+            let subletter = document.createElement("p")
+            subletter.setAttribute("class", "subletter")
+            subletter.innerText = arr[count].subletter;
+            childDiv.append(subletter);
+
+            let price = document.createElement("p");
+            price.setAttribute("class", "price");
+            price.innerText = arr[count].price;
+            childDiv.append(price);
+
+            let lprice = document.createElement("p");
+            lprice.setAttribute("class", "lprice");
+            lprice.innerText = arr[count].lprice;
+            childDiv.append(lprice);
+
+            wrapper.appendChild(childDiv);
+
+            count++;
+
+        }
+        div.appendChild(wrapper);
+
+        var image = document.createElement("img")
+        image.setAttribute("src", "https://n.nordstrommedia.com/id/f685d17f-83a2-459f-bb3d-d8b137170053.jpeg?h=200&w=1334")
+
+        var h2 = document.createElement("h2")
+        h2.setAttribute("class", "h2")
+        h2.innerText = "There's Always More"
+
+        var wrapper1 = document.createElement("div")
+        wrapper1.setAttribute("class", "wrapper1")
+
+            var smallDiv = document.createElement("div")
+            smallDiv.setAttribute("class", "smallDiv")
+            var image1 = document.createElement("img")
+            image1.setAttribute("src", "https://n.nordstrommedia.com/id/393e9216-2553-476c-803f-c65f248e3763.jpeg?h=501&w=536")
+            var x = document.createElement("p")
+            x.setAttribute("class", "x")
+            x.innerText = "Accessories, Handbags & More"
+
+            var y = document.createElement("p")
+            y.setAttribute("class", "y")
+            y.innerText = "Ultra-luxe gifts at incredible prices."
+
+            var z = document.createElement("p")
+            z.setAttribute("class", "z")
+            z.innerText = "Designer Accessories  Designer Handbags"
+
+            var a = document.createElement("p")
+            a.setAttribute("class", "z")
+            a.innerText = "Designer Sunglasses"
+
+            smallDiv.append(image1, x, y, z, a)
+            wrapper1.append(smallDiv)
+            
+            var smallDiv = document.createElement("div")
+            smallDiv.setAttribute("class", "smallDiv")
+            var image1 = document.createElement("img")
+            image1.setAttribute("src", "https://n.nordstrommedia.com/id/a6d15459-6d11-4fa6-bc7a-0e4a11365535.jpeg?h=501&w=536")
+
+            var x = document.createElement("p")
+            x.setAttribute("class", "x")
+            x.innerText = "Up to 70% Off T Tahari, Max Studio & More"
+            var y = document.createElement("p")
+            y.setAttribute("class", "y")
+            y.innerText = "They call it sweater weather for a reason."
+            var z = document.createElement("p")
+            z.setAttribute("class", "z")
+            z.innerText = "Show Now"
+
+            smallDiv.append(image1, x, y, z)
+            wrapper1.append(smallDiv)
+
+            var smallDiv = document.createElement("div")
+            smallDiv.setAttribute("class", "smallDiv")
+            var image1 = document.createElement("img")
+            image1.setAttribute("src", "https://n.nordstrommedia.com/id/a686b84d-a71d-4b87-9fe5-c9501dc7a9c1.jpeg?h=501&w=536")
+
+            var x = document.createElement("p")
+            x.setAttribute("class", "x")
+            x.innerText = "Up to 70% Off T Tahari, Max Studio & More"
+            var y = document.createElement("p")
+            y.setAttribute("class", "y")
+            y.innerText = "They call it sweater weather for a reason."
+            var z = document.createElement("p")
+            z.setAttribute("class", "z")
+            z.innerText = "Women's Designer Clothing Women's Designer Shoes"
+            var a = document.createElement("p")
+            a.setAttribute("class", "z")
+            a.innerText = "Men's Designer Clothing  Men's Designer Shoes"
+            smallDiv.append(image1, x, y, z, a)
+            wrapper1.append(smallDiv)
+
+        var head = document.createElement("h2")
+        head.setAttribute("class", "h2")
+        head.innerText = "More to Know"
+
+
+        var wrapper2 = document.createElement("div")
+        wrapper2.setAttribute("class", "wrapper1")
+            var smallDiv1 = document.createElement("div")
+            smallDiv1.setAttribute("class", "smallDiv")
+            var image2 = document.createElement("img")
+            image2.setAttribute("src", "https://n.nordstrommedia.com/id/45f87781-8b66-4a5b-a6bd-de56d62a0fb2.jpeg?h=188&w=402")
+
+            var p = document.createElement("p")
+            p.setAttribute("class", "x")
+            p.innerText = "Up to 70% Off T Tahari, Max Studio & More"
+            var q = document.createElement("p")
+            q.setAttribute("class", "y")
+            q.innerText = "They call it sweater weather for a reason."
+            var r = document.createElement("p")
+            r.setAttribute("class", "z")
+            r.innerText = "Show Now"
+            smallDiv1.append(image2, p, q, r)
+            wrapper2.append(smallDiv1)
+
+            var smallDiv1 = document.createElement("div")
+            smallDiv1.setAttribute("class", "smallDiv")
+            var image2 = document.createElement("img")
+            image2.setAttribute("src", "https://n.nordstrommedia.com/id/f557ba91-d185-4c98-bed7-b20449496ad2.jpeg?h=188&w=402")
+
+            var p = document.createElement("p")
+            p.setAttribute("class", "x")
+            p.innerText = "Up to 70% Off T Tahari, Max Studio & More"
+            var q = document.createElement("p")
+            q.setAttribute("class", "y")
+            q.innerText = "They call it sweater weather for a reason."
+            var r = document.createElement("p")
+            r.setAttribute("class", "z")
+            r.innerText = "Show Now"
+            smallDiv1.append(image2, p, q, r)
+            wrapper2.append(smallDiv1)
+
+            var smallDiv1 = document.createElement("div")
+            smallDiv1.setAttribute("class", "smallDiv")
+            var image2 = document.createElement("img")
+            image2.setAttribute("src", "https://n.nordstrommedia.com/id/eb17d98e-5f5c-4ec6-bb46-c9c7f0d33dab.jpeg?h=188&w=402")
+
+            var p = document.createElement("p")
+            p.setAttribute("class", "x")
+            p.innerText = "Up to 70% Off T Tahari, Max Studio & More"
+            var q = document.createElement("p")
+            q.setAttribute("class", "y")
+            q.innerText = "They call it sweater weather for a reason."
+            var r = document.createElement("p")
+            r.setAttribute("class", "z")
+            r.innerText = "Show Now"
+            smallDiv1.append(image2, p, q, r)
+            wrapper2.append(smallDiv1)
+
+
+            var smallDiv1 = document.createElement("div")
+            smallDiv1.setAttribute("class", "smallDiv")
+            var image2 = document.createElement("img")
+            image2.setAttribute("src", "https://n.nordstrommedia.com/id/b696c8a3-f2e2-4738-bfdd-dcffba6ee55a.jpeg?h=188&w=402")
+
+            var p = document.createElement("p")
+            p.setAttribute("class", "x")
+            p.innerText = "Up to 70% Off T Tahari, Max Studio & More"
+            var q = document.createElement("p")
+            q.setAttribute("class", "y")
+            q.innerText = "They call it sweater weather for a reason."
+            var r = document.createElement("p")
+            r.setAttribute("class", "z")
+            r.innerText = "Show Now"
+            smallDiv1.append(image2, p, q, r)
+            wrapper2.append(smallDiv1)
+
+        var head1 = document.createElement("h2")
+        head1.setAttribute("class", "h2")
+        head1.innerText = "Shop #nordstromrack"
+
+        var para1 = document.createElement("p")
+        para1.setAttribute("class", "para1")
+        para1.innerText = "Click your favorite photos to shop fan finds. Add the hashtag to your post for a chance to be featured!"
+
+        var wrapper3 = document.createElement("div")
+        wrapper3.setAttribute("class", "wrapper1")
+        var smallDiv2 = document.createElement("div")
+            smallDiv2.setAttribute("class", "smallDiv")
+            var image3 = document.createElement("img")
+            image3.setAttribute("class", "image3")
+            image3.setAttribute("src", "https://cdn.dashhudson.com/media/640/1635024938.355172968493.jpeg")
+            smallDiv2.append(image3)
+            wrapper3.append(smallDiv2)
+
+            var smallDiv2 = document.createElement("div")
+            smallDiv2.setAttribute("class", "smallDiv")
+            var image3 = document.createElement("img")
+            image3.setAttribute("src", "https://cdn.dashhudson.com/media/640/1635643998.310572973748.jpeg")
+            smallDiv2.append(image3)
+            wrapper3.append(smallDiv2)
+
+            var smallDiv2 = document.createElement("div")
+            smallDiv2.setAttribute("class", "smallDiv")
+            var image3 = document.createElement("img")
+            image3.setAttribute("src", "https://cdn.dashhudson.com/media/640/1636045931.856827735731.jpeg")
+            smallDiv2.append(image3)
+            wrapper3.append(smallDiv2)
+
+
+            var smallDiv2 = document.createElement("div")
+            smallDiv2.setAttribute("class", "smallDiv")
+            var image3 = document.createElement("img")
+            image3.setAttribute("src", "https://cdn.dashhudson.com/media/640/1633793377.34640710585.jpeg")
+            smallDiv2.append(image3)
+            wrapper3.append(smallDiv2)
+
+            var smallDiv2 = document.createElement("div")
+            smallDiv2.setAttribute("class", "smallDiv")
+            var image3 = document.createElement("img")
+            image3.setAttribute("src", "	https://cdn.dashhudson.com/media/640/1621188742.400527727030.jpeg")
+            smallDiv2.append(image3)
+            wrapper3.append(smallDiv2)
+
+        var imageS = document.createElement("img")
+        imageS.setAttribute("src", "https://n.nordstrommedia.com/id/ada19f59-fec4-4365-95a8-458a289a9303.jpeg?h=180&w=1600")
+
+        var wrapper4 = document.createElement("div")
+        wrapper4.setAttribute("class", "wrapper4")
+            var label = document.createElement("label")
+            label.setAttribute("class", "label")
+            label.innerText = "Get E-mail Updates:"
+            var input1 = document.createElement("input")
+            input1.setAttribute("class", "input1")
+            var button1 = document.createElement("button")
+            button1.setAttribute("class", "button1")
+            button1.innerText = "SIGN UP"
+            wrapper4.append(label, input1, button1)
+
+        var table = document.createElement("table")
+        table.setAttribute("class", "table")
+            var tr1 = document.createElement("tr")
+            tr1.setAttribute("class", "tr")
+                var th1 = document.createElement("th")
+                th1.innerText = "Customer Service"
+                var th2 = document.createElement("th")
+                th2.innerText = "About Us"
+                var th3 = document.createElement("th")
+                th3.innerText = "Nordstrom Rack & The Community"
+                var th4 = document.createElement("th")
+                th4.innerText = "Customer Service"
+                var th5 = document.createElement("th")
+                th5.innerText = "Customer Service"
+            tr1.append(th1, th2, th3, th4, th5)
+
+            var tr2 = document.createElement("tr")
+            tr2.setAttribute("class", "tr")
+                var td1 = document.createElement("td")
+                td1.setAttribute("class", "td")
+                td1.innerText = "Order Status"
+                var td2 = document.createElement("td")
+                td2.setAttribute("class", "td")
+                td2.innerText = "About Our Brand"
+                var td3 = document.createElement("td")
+                td3.setAttribute("class", "td")
+                td3.innerText = "Corporate Social Responsibility"
+                var td4 = document.createElement("td")
+                td4.setAttribute("class", "td")
+                td4.innerText = "Apply for a Nordstrom Card"
+                var td5 = document.createElement("td")
+                td5.setAttribute("class", "td")
+                td5.innerText = "Nordstrom"
+            tr2.append(td1, td2, td3, td4, td5)
+
+            var tr3 = document.createElement("tr")
+            tr3.setAttribute("class", "tr")
+                var td1 = document.createElement("td")
+                td1.setAttribute("class", "td")
+                td1.innerText = "Guest Returns"
+                var td2 = document.createElement("td")
+                td2.setAttribute("class", "td")
+                td2.innerText = "The Nordy Club"
+                var td3 = document.createElement("td")
+                td3.setAttribute("class", "td")
+                td3.innerText = "Diversity, Inclusion & Belonging"
+                var td4 = document.createElement("td")
+                td4.setAttribute("class", "td")
+                td4.innerText = "Pay My Bill"
+                var td5 = document.createElement("td")
+                td5.setAttribute("class", "td")
+                td5.innerText = "Nordstrom Canada"
+            tr3.append(td1, td2, td3, td4, td5)
+
+            var tr4 = document.createElement("tr")
+            tr4.setAttribute("class", "tr")
+                var td1 = document.createElement("td")
+                td1.setAttribute("class", "td")
+                td1.innerText = "Shipping & Return Policy"
+                var td2 = document.createElement("td")
+                td2.setAttribute("class", "td")
+                td2.innerText = "Store Locator"
+                var td3 = document.createElement("td")
+                td3.setAttribute("class", "td")
+                td3.innerText = "Big Brothers Big Sisters"
+                var td4 = document.createElement("td")
+                td4.setAttribute("class", "td")
+                td4.innerText = "Manage my Nordstrom Card"
+                var td5 = document.createElement("td")
+                td5.setAttribute("class", "td")
+                td5.innerText = "Trunk Club"
+            tr4.append(td1, td2, td3, td4, td5)
+
+            var tr5 = document.createElement("tr")
+            tr5.setAttribute("class", "tr")
+                var td1 = document.createElement("td")
+                td1.setAttribute("class", "td")
+                td1.innerText = "Order Status"
+                var td2 = document.createElement("td")
+                td2.setAttribute("class", "td")
+                td2.innerText = "About Our Brand"
+                var td3 = document.createElement("td")
+                td3.setAttribute("class", "td")
+                td3.innerText = "Corporate Social Responsibility"
+                var td4 = document.createElement("td")
+                td4.setAttribute("class", "td")
+                td4.innerText = "Apply for a Nordstrom Card"
+                var td5 = document.createElement("td")
+                td5.setAttribute("class", "td")
+                td5.innerText = "Nordstrom"
+            tr5.append(td1, td2, td3, td4, td5)
+
+
+            var tr6 = document.createElement("tr")
+            tr6.setAttribute("class", "tr")
+                var td1 = document.createElement("td")
+                td1.setAttribute("class", "td")
+                td1.innerText = "Gift Cards"
+                var td2 = document.createElement("td")
+                td2.setAttribute("class", "td")
+                td2.innerText = "All Brands"
+                var td3 = document.createElement("td")
+                td3.setAttribute("class", "td")
+                td3.innerText = "Donate Clothes"
+                var td4 = document.createElement("td")
+                td4.setAttribute("class", "td")
+                td4.innerText = ""
+                var td5 = document.createElement("td")
+                td5.setAttribute("class", "td")
+                td5.innerText = "HauteLook"
+            tr6.append(td1, td2, td3, td4, td5)
+
+            var tr7 = document.createElement("tr")
+            tr7.setAttribute("class", "tr")
+                var td1 = document.createElement("td")
+                td1.setAttribute("class", "tdf")
+                td1.innerText = "FAQ"
+                var td2 = document.createElement("td")
+                td2.setAttribute("class", "td")
+                td2.innerText = "Careers"
+                var td3 = document.createElement("td")
+                td3.setAttribute("class", "td")
+                td3.innerText = ""
+                var td4 = document.createElement("td")
+                td4.setAttribute("class", "td")
+                td4.innerText = ""
+                var td5 = document.createElement("td")
+                td5.setAttribute("class", "td")
+                td5.innerText = "Investor Relations"
+            tr7.append(td1, td2, td3, td4, td5)
+
+        table.append(tr1, tr2, tr3, tr4, tr5, tr6, tr7)
+
+    body.append(div, image, h2, wrapper1, head, wrapper2, head1, para1, wrapper3, imageS, wrapper4, table);
+    document.querySelector(".img").addEventListener("click", function () {
+        window.location.href = "productPage.html";
+    })
+
+    document.querySelector(".subtitle").addEventListener("click", function () {
+        window.location.href = "productPage.html";
+    })
+
+    document.querySelector(".tdf").addEventListener("click", function() {
+        window.location.href = "faq.html"
+    })
+</script>
+

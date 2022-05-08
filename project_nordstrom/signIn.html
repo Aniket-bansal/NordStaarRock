@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            div {
+                line-height: 50px;
+                width: 400px;
+                height: 500px;
+                margin: auto;
+            }
+            input {
+                height: 40px;
+                width: 325px;
+            }
+            button {
+                margin-top: 15px;
+                width: 325px;
+                height: 40px;
+                background: #00819d none!important;
+                border-color: #00819d;
+                color: #fff!important;
+                font-weight: 400;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>signIn</h1>
+            <label>Email</label><br>
+            <input id="email" type="email" placeholder="Enter Your Email"/><br>
+            <button>Next</button>
+        </div>
+    </body>
+</html>
+
+
+<script>
+    document.querySelector("button").addEventListener("click", signUp);
+    var userArr = JSON.parse(localStorage.getItem("userData")) || [];
+
+    function signUp() {
+        var email = document.getElementById("email").value;
+
+        var isEmailTaken = false 
+        for(var i = 0; i < userArr.length; i++) {
+            if(userArr[i].emailAddress === email) {
+                isEmailTaken = true
+                break;
+            }
+        }
+
+        var userCredentials = {
+            emailAddress: email,
+        };
+        console.log({isEmailTaken});
+        if(isEmailTaken) {
+            alert("User already exist.")
+        } else {
+            userArr.push(userCredentials);
+            localStorage.setItem("userData", JSON.stringify(userArr))
+            window.location.href = "createAccount.html";
+        }
+    }   
+</script>

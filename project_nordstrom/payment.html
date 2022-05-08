@@ -1,0 +1,74 @@
+
+
+ <head>
+    <title></title>
+    <style>
+          div {
+                line-height: 50px;
+                width: 400px;
+                height: 500px;
+                margin: auto;
+            }
+
+            input {
+                height: 40px;
+                width: 325px;
+                line-height: 10px;
+            }
+
+            label {
+                line-height: 40px;
+                text-align: left;
+            } 
+
+            button {
+                margin-top: 15px;
+                width: 325px;
+                height: 40px;
+                background-color: teal;;
+                color: white;
+                font-weight: bold;
+            }
+
+            #otp {
+                height: 35px;
+                width: 180px;
+                margin-top: 10px;
+            }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>payment page</h1>
+        <label>Card Number</label><br>
+        <input id="number" type="number" value="1122334455667788" placeholder="Enter your card number" /><br>
+        <label>Cvv Number</label><br>
+        <input id="cvv" type="number" value="123" placeholder="Enter your cvv number" /><br>
+        <label>Expiry date</label><br>
+        <input id="expirydate" type="date" placeholder="Expiry date" /><br>
+        <label>Name</label><br>
+        <input id="name" type="text" placeholder="Enter your name" /><br>
+        <button id="placeorder">Place Order</button>
+    </div>
+</body>
+
+<script>
+    document.querySelector("#placeorder").addEventListener("click", logIn);
+    function logIn() {
+        var number = document.querySelector("#number").value;
+        var cvv = document.querySelector("#cvv").value;
+        var expirydate = document.querySelector("#expirydate").value;
+        var name = document.querySelector("#name").value;
+        if (!number || !cvv || !expirydate || !name) {
+            return alert("please fill in details");
+        }
+        if (number.length > 16 || number.length < 16) {
+            return alert("Card number should have 16 digits.")
+        }
+        if (cvv.length > 3 || cvv.length < 3) {
+           return alert("CVV should have 3 digits.")
+        }
+        window.location.href = "otp.html";
+    }
+</script>

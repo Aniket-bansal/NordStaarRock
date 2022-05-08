@@ -1,0 +1,380 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+
+            body {
+                margin: 0;
+            }
+
+            .div {
+                width: 1100px;
+                height: 100%;
+                display: flex; 
+                flex-flow: row;
+                gap: 20rem;
+                justify-content: center;
+                margin: auto;
+                margin-top: -125px;
+            }
+            header {
+                height: 5%;
+                background-color: rgb(173, 4, 196);
+                color: white;
+                text-align: center;
+                justify-content: center;
+            }
+            #logo {
+                margin-top: 14%;
+            }
+            #logo2 {
+                display: flex;
+                margin-left: 70%;
+                gap: 42px;
+            }
+            #logo2 > p:first-child {
+                margin-top: 14%;
+            }
+            #logo3 {
+                border: none;
+                background-color: white;
+                cursor: pointer;
+            }
+            #logo3:hover {
+                border: none;
+                color: rgb(43, 66, 66);
+                cursor: pointer;
+                font-weight: bold;
+            }
+            .Div2 {
+                display: flex;
+                height: 55px;
+                width: 100%;
+            }
+            #paragraph {
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 5%;
+                
+            }
+            #paragraph > button {
+                border: none;
+                background-color: white;
+            }
+            #paragraph > button:hover {
+                cursor: pointer;
+                border-bottom: 2px solid black;
+            }
+            #red{
+                color: red;
+            }
+            #red{
+                border-bottom: 2px solid red;
+            }
+            #teal {
+                color: teal;
+            }
+            #teal {
+                border-bottom: 2px solid teal;
+            }
+
+            .childDiv {
+                width: 325px;
+                height: 630px;
+            }
+
+            .textdiv {
+                width: 750px;
+                height: 600px;
+                margin-top: 100px;
+                background-color: white;
+                margin-top: 99px;
+            }
+
+            .img {
+                width: 550px;
+                height: 600px;
+                margin: auto;       
+                cursor: pointer;
+                margin-top: 100px;
+            }
+
+            .lastbutton {
+                width: 590px;
+                height: 40px;
+                background-color: rgb(2, 160, 160);
+                color: white;
+                margin-left: 15px;
+                margin-bottom: 5px;
+                border: none;
+                font-weight: bold;
+            }
+
+            .lastbutton:hover {
+                cursor: pointer;
+                background-color: white;
+                color: teal;
+                border:1px solid teal;
+                font-weight: bold;
+            }
+
+            .p {
+                margin-left: 15px;
+                color: teal;
+                font-size: large;
+                font-weight: bold;
+            }
+
+            .p1 {
+                margin-left: 15px;
+                color: teal;
+                line-height: 0px;
+            }
+            .p1:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+            .p2 {
+                margin-left: 15px;
+                color: rgb(85, 83, 83);
+                font-weight: bold;
+                line-height: 35px;
+            }
+
+            .p3 {
+                margin-left: 15px;
+                color: rgb(65, 64, 64);
+                font-size: large;
+                font-weight: bold;
+                line-height: 0px;
+            }
+
+            .p4 {
+                margin-left: 15px;
+                color: rgb(65, 64, 64);
+                font-size: 15px;
+                font-weight: bold;
+                text-decoration: line-through;
+            }
+
+            .off {
+                color: teal;
+                margin-left: 15px;
+                line-height: 0px;   
+            }
+
+            .p5 {
+                margin-left: 15px;
+                color: teal;
+                font-size: 13px;
+                line-height: 25px;
+            }
+
+            .p6 {
+                margin-left: 15px;
+                color: teal;
+                font-size: 13px;
+                line-height: 5px;
+            }
+
+            .p7 {
+                margin-left: 15px;
+                color: teal;
+                font-size: 13px;
+                line-height: 5px;
+            }
+
+            .p8 {
+                margin-left: 15px;
+                color: teal;
+                font-size: 13px;
+                line-height: 5px;
+            }
+
+            .p9 {
+                margin-left: 15px;
+                font-size: large;
+                font-weight: bold;
+                color: rgb(94, 93, 93);
+                margin-top: 55px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <header>
+                <h3>GET YOUR GIFTS IN TIME FOR CHRISTMAS 
+                    <span>
+                        Order by 5PM PT on 12/18 for expedited shipping.
+                    </span>
+                    <span>The Holiday Gift Shop</span>
+                </h3>
+            </header>
+        </div>
+        <div class="Div2">
+            <div>
+                <p id="logo">NORSTROMErack</p>
+            </div>
+            <div id="logo2">
+                <p>search</p>
+                <button id="logo3">Sign In</button>
+            </div>
+        </div>
+        <div id="paragraph">
+           <button id="red">Holiday Gifts</button>
+           <button>Women</button>
+           <button>Men</button>
+           <button>Kids</button>
+           <button>Shoes</button>
+           <button>Bags & Accessories</button>
+           <button>Home</button>
+           <button>Beauty</button>
+           <button>Clearance</button>
+           <button id="teal">Flash Events</button>
+        </div>
+    </body>
+</html>
+
+<!-- <script>
+    var product = JSON.parse(localStorage.getItem("currentProduct"));
+    document.querySelector(".lastbutton").addEventListener("click", function() {
+        window.location.href = "addT0Bag.html";
+    })
+    displayItems(product);      
+
+    var cart = JSON.parse(localStorage.getItem("cartItem")) || [];
+
+    function displayItems(product) {
+        // product && product.map(function(item){ 
+
+            var div = document.createElement("div")
+            var img = document.createElement("img");    
+            img.setAttribute("src", product.image_url);
+            var title = document.createElement("p");
+            title.textContent = product.title;
+            var subtitle = document.createElement("p");
+            subtitle.textContent = product.subtitle;
+            var subtext = document.createElement("p");
+            subtext.textContent = product.subtext;
+
+            var lastbutton = document.createElement("button")
+            lastbutton.textContent = "Add To Bag";
+            lastbutton.addEventListener("click", function() {
+                addToCart(product);
+            });
+
+            div.append(img, title, subtitle, subtext, lastbutton)
+            document.querySelector("body").append(div);
+        // });
+
+        // function addToCart(product) {
+        //     var isItemInCart = false;
+        //     product && product.forEach(element => {
+        //         if (element.name.toLowerCase() === item.name.toLowerCase() 
+        //             && element.price === product.price 
+        //             && element.image_url === product.image_url
+        //         ) {
+        //             isItemInCart = true;
+        //             return alert("Item already exist in cart")
+        //         }
+        //     });
+        //     if (!isItemInCart) {
+        //         cart.push(item);
+        //         localStorage.setItem("cartItem", JSON.stringify(cart));
+        //     }
+        // }
+    }
+</script> -->
+<script>
+
+    document.querySelector("#logo3").addEventListener("click", signIn)
+    function signIn() {
+        window.location.href = "signIn.html"
+    } 
+    
+    var arr = [
+        {
+            quantity: 1,
+        },
+    ]
+    let count1 = 0;
+    let body = document.querySelector("body");
+    let div = document.createElement("div");
+    div.setAttribute("class", "div");
+
+
+    let childDiv = document.createElement("div");
+    childDiv.setAttribute("class", "childDiv");
+    let img = document.createElement("img");
+    img.setAttribute("class", "img");
+    img.setAttribute("src", "https://n.nordstrommedia.com/id/sr3/fe4c258c-9931-4c47-a927-07f037704920.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196");
+    img.setAttribute("title", "SBL 116 HAIR CARE PACK (COMBO OF 3)");
+    childDiv.append(img);
+    // div.append(childDiv);
+
+
+    let textdiv = document.createElement("div");
+    textdiv.setAttribute("class", "textdiv");
+
+    let p = document.createElement("p")
+    p.setAttribute("class", "p");
+    p.innerText = "Print Footie";
+
+    let p1 = document.createElement("p");
+    p1.setAttribute("class", "p1");
+    p1.innerText = "NORDSTROM BABY";
+
+    let p2 = document.createElement("p");
+    p2.setAttribute("class", "p2");
+    p2.innerText = "Baby"
+
+    let p3 = document.createElement("p");
+    p3.setAttribute("class", "p3");
+    p3.innerText = "$ 453.42";
+
+    let p4 = document.createElement("p");
+    p4.setAttribute("class", "p4");
+    p4.innerText = "$ 458.00";
+
+    let off = document.createElement("p");
+    off.setAttribute("class", "off");
+    off.innerText = "73% Off";
+
+    let p5 = document.createElement("p");
+    p5.setAttribute("class", "p5");
+    p5.innerText = "Note:Availability / Confirmation & Deliveries of product will be assured once the Pharmacy partners & Shipping partners are confirmed.";
+
+    let p6 = document.createElement("p");
+    p6.setAttribute("class", "p6");
+    p6.innerText = "1. Do not share your credentials or otp with anyone on call,email or sms.";
+
+    let p7 = document.createElement("p");
+    p7.setAttribute("class", "p7");
+    p7.innerText = "2. MedNear never asks you for your credentials or otp.";
+
+    let p8 = document.createElement("p");
+    p8.setAttribute("class", "p8");
+    p8.innerText = "3. Always create a strong password and keep different passwords for different websites.";
+
+    let p9 = document.createElement("p");
+    p9.setAttribute("class", "p9");
+    p9.innerText = "AVAILABLE OTHER VARIANTS";
+
+
+    let lastbutton = document.createElement("button")
+    lastbutton.setAttribute("class", "lastbutton")
+    lastbutton.innerText = "Add To Bag"
+
+    textdiv.append(p, p1, p2, p3, p4, off, p5, p6, p7, p8, p9, lastbutton);
+
+    div.append(childDiv, textdiv);
+    body.append(div);
+
+    document.querySelector(".lastbutton").addEventListener("click", signIn)
+    function signIn() {
+        window.location.href = "addToBag.html"
+    } 
+
+
+</script>

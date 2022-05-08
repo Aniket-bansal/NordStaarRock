@@ -1,0 +1,669 @@
+<html>
+    <head>
+
+        <title></title>
+
+        <style>
+
+            body {
+                background-color: white;
+                margin: 0;
+                /* width: 98%;
+                margin: auto; */
+            }
+
+            p {
+                margin-left: 3.2rem;
+                margin-top: 5rem;
+            }
+
+            span:hover {
+                color: teal;
+                cursor: pointer;
+            }
+
+            header {
+                height: 5%;
+                background-color: rgb(173, 4, 196);
+                color: white;
+                text-align: center;
+                justify-content: center;
+            }
+            #logo {
+                margin-top: 10%;
+            }
+            #logo2 {
+                display: flex;
+                margin-left: 70%;
+                gap: 42px;
+            }
+            #logo2 > p:first-child {
+                margin-top: 10%;
+            }
+            #logo3 {
+                border: none;
+                background-color: white;
+                cursor: pointer;
+            }
+            #logo3:hover {
+                border: none;
+                color: rgb(43, 66, 66);
+                cursor: pointer;
+                font-weight: bold;
+            }
+            .Div2 {
+                display: flex;
+                height: 55px;
+                width: 100%;
+            }
+            #paragraph {
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 5%;
+                height: 18px;
+                
+            }
+            #paragraph > button {
+                border: none;
+                background-color: white;
+            }
+            #paragraph > button:hover {
+                cursor: pointer;
+                border-bottom: 2px solid black;
+            }
+            #paragraph > button:first-child {
+                color: red;
+            }
+            #paragraph > button:first-child:hover {
+                border-bottom: 2px solid red;
+            }
+            #paragraph > button:last-child {
+                color: teal;
+            }
+            #paragraph > button:last-child:hover {
+                border-bottom: 2px solid teal;
+            }
+
+            .div {
+                width: 95%;
+                height: 100%;
+                display: flex;
+                flex-flow: row;
+                gap: 1.5rem;
+                justify-content: center;
+                margin: auto;
+            }
+
+            .wrapper {
+                display: flex;
+                gap: 1.5rem;
+                flex-flow: column;
+            }
+
+            .child-div {
+                height: 500px;
+                width: 300px;
+                background-color: white;
+                display: flex;
+                flex-flow: column;
+            }
+
+            .child-div:hover {
+               box-shadow: 0 7px 17px 0 rgb(23 84 116 / 18%);
+            }
+
+            .button {
+                width: 55px;
+                height: 35px;
+                background-color: white;
+                border-radius: 4px;
+                border: 1px solid teal;
+                color: teal;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+
+            .img {
+                width: 270px;
+                height: 500px;
+                margin: auto;
+                cursor: pointer;
+            }
+
+            .subtitle {
+                width: 225px;
+                height: 35px;
+                margin-left: 12px;
+                margin-top: 6px;
+                margin-bottom: 0px;
+                font-size: 13px;
+                font-family: sans-serif;
+                color: red;
+            }
+
+            .subtext {
+                width: 225px;
+                height: 35px;
+                margin-left: 12px;
+                margin-top: 6px;
+                margin-bottom: 0px;
+                font-size: 12px;
+                /* color: gray; */
+            }
+
+            .subletter {
+                width: 225px;
+                height: 35px;
+                margin-left: 12px;
+                margin-top: 6px;
+                margin-bottom: 0px;
+                font-size: 13px;
+                font-family: sans-serif;
+            }
+
+            .subletter:hover{
+                color: teal;
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+            .price {
+                width: 90px;
+                height: 18px;
+                margin-left: 12px;
+                margin-top: 6px;
+                margin-bottom: 0px;
+                font-size: 13px;
+                color: red;
+            }
+            .lprice {
+                width: 90px;
+                height: 18px;
+                margin-left: 82px;
+                margin-top: -15px;
+                margin-bottom: 0px;
+                margin-bottom: 5px;
+                font-size: 13px;
+                color: rgb(66, 65, 65);
+                text-decoration-line: line-through;
+            }
+            
+            hr {
+                color: gray;
+                width: 1267px;
+            }
+            .selectBtn {
+                display: flex;
+            }
+            #priceSort {
+                height: 40px;
+                margin-left: 75%;
+                margin-bottom: 0%;
+            }
+            #nameSort {
+                height: 40px;
+                margin-left: 2%;
+                margin-bottom: 0%;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div>
+            <header>
+                <h3>GET YOUR GIFTS IN TIME FOR CHRISTMAS 
+                    <span>
+                        Order by 5PM PT on 12/18 for expedited shipping.
+                    </span>
+                    <span>The Holiday Gift Shop</span>
+                </h3>
+            </header>
+        </div>
+        <div class="Div2">
+            <div>
+                <p id="logo">NORSTROMErack</p>
+            </div>
+            <div id="logo2">
+                <p>search</p>
+                <button id="logo3">Sign In</button>
+            </div>
+        </div>
+        <div id="paragraph">
+           <button>Holiday Gifts</button>
+           <button id="women">Women</button>
+           <button>Men</button>
+           <button>Kids</button>
+           <button>Shoes</button>
+           <button>Bags & Accessories</button>
+           <button>Home</button>
+           <button>Beauty</button>
+           <button>Clearance</button>
+           <button>Flash Events</button>
+        </div>
+        <div class="selectBtn">
+            <select name="" id="priceSort" onchange="handlePriceSort()">
+                <option value="">Sort by price</option>
+                <option value="low">Sort by price: high to low</option>
+                <option value="high">Sort by price: low to high</option>
+            </select>
+            <select name="" id="nameSort">
+                <option value="">Sort by Alphabet</option>
+                <option value="asc">Ascending</option>
+                <option value="dsc">Dscending</option>
+            </select>
+        </div>
+        <div id="cont"></div>
+    </body>
+
+</html>
+
+
+<script> 
+    document.querySelector("#logo3").addEventListener("click", signIn)
+    function signIn() {
+        window.location.href = "signIn.html"
+    } 
+
+    function handlePriceSort() {
+        var selected = document.querySelector("#priceSort").value
+    }
+
+    // if (selected == "high") {
+    //     arr.sort(function (a, b) {
+    //       return Number(b.price) - Number(a.price);
+    //     });
+    //   }
+    // if (selected == "low") {
+    //     arr.sort(function (a, b) {
+    //       return Number(a.price) - Number(b.price);
+    //     });
+    //   }
+    
+
+
+    var arr = [
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/fe4c258c-9931-4c47-a927-07f037704920.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            title: "Print Footie (Baby), Image",
+            subtitle: "New Markdown",
+            subtext: "NORDSTROM BABY",
+            subletter: "Print Footie (Baby)",
+            price: "$ 46.40",
+            lprice: "$ 46.87",
+            // id: 1
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/a22eb1dc-b3e5-4469-bd47-07570532f6d7.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838",
+            title: "SBL GNAPHALIUM POLYCEPHALUM DILUTION 1000 CH",
+            subtitle: "SBL GELSEMIUM SEMPERVIRENS",
+            subtext: "bottle of 30 ml Dilution",
+            subletter: "Print Footie (Baby)",
+            price: "$ 94.05",
+            lprice: "$ 95.00",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/b7849a79-2aa9-440d-aaa3-899e78a43860.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            title: "MUSCLETECH HYDROXYCUT HARDCORE NEXT GEN CAPSULE ",
+            subtitle: "MUSCLETECH HYDROXYCUT HAR",
+            subtext: "bottle of 100 capsules",
+            subletter: "Print Footie (Baby)",
+            price: "Rs.2,969.01",
+            lprice: "Rs.2,999.00",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/cadd1694-3ec5-4a22-a74f-9ef71e4d7020.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            title: "DOLTOL GEL",
+            subtitle: "DOLTOL GEL",
+            subtext: "tube of 30 gm Gel",
+            price: "Rs.58.90",
+            lprice: "Rs.59.50",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/5b54f53c-6e2d-48c1-b588-9790e577df92.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838",
+            title: "TOSS K PASTE",
+            subtitle: "TOSS K PASTE…",
+            subtext: "tube of 50 gm Paste",
+            price: "Rs.74.25",
+            lprice: "Rs.75.00",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/ede45404-7bc1-473c-a4c6-980867d1c69a.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            title: "RADIAL XT SYRUP",
+            subtitle: "RADIAL XT SYRUP…",
+            subtext: "bottle of 150 ml Syrup",
+            price: "Rs.89.10",
+            lprice: "Rs.90.00",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/1b7d31f2-251f-4c7f-b56d-2ea508d64272.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838",
+            title: "PANKAJAKASTHURI ORTHOHERERB TABLET",
+            subtitle: "PANKAJAKASTHURI ORTHOHERB…",
+            subtext: "box of 60 tablets",
+            price: "Rs.247.50",
+            lprice: "Rs.250.00",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/21de819c-b437-4865-9117-df1e77774726.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            title: "HEALTHVIT ECHINACEA EXTRACT 250MG CAPSULE",
+            subtitle: "MUSCLETECH PERFORMANCE SERIES HYDROXYCUT…",
+            subtext: "bottle of 110 capsules",
+            price: "Rs.2,375.00",
+            lprice: "Rs.2,500.00",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/e0843837-027e-4ba8-b3c3-d083f6afec07.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            title: "MYVITS SYRUP",
+            subtitle: "MYVITS SYRUP…",
+            subtext: "bottle of 200 ml Syrup",
+            price: "Rs.128.70",
+            lprice: "Rs.130.00",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/d3fe47c1-bbc5-42d0-80b3-a455d765114b.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            title: "VIS WASH LOTION",
+            subtitle: "VIS WASH LOTION",
+            subtext: "bottle of 50 ml Lotion",
+            price: "Rs.74.25",
+            lprice: "Rs.75.00",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/2023e7dc-dca9-4c41-82bf-3669fed91a79.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838",
+            title: "REJUSPERMIN CAPSULE",
+            subtitle: "REJUSPERMIN CAPSULE…",
+            subtext: "strip of 10 capsules",
+            price: "Rs.89.10",
+            lprice: "Rs.90.00",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/56154e86-73f2-4ec5-9059-227850596ea1.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            title: "FOLIRED SYRUP",
+            subtitle: "FOLIRED SYRUP…",
+            subtext: "bottle of 200 ml Syrup",
+            price: "Rs.74.25",
+            lprice: "Rs.75.00",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/cdc0bdb8-5a62-4d8c-a10b-8a7028cdddc9.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838",
+            title: "WATCHWT TABLET",
+            subtitle: "WATCHWT TABLET",
+            subtext: "strip of 10 tablets",
+            price: "Rs.215.82",
+            lprice: "Rs.218.00",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/eb2c0178-6de2-4de1-a819-5c169fec9f91.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838",
+            title: "I REST EYE DROP",
+            subtitle: "I REST EYE DROP",
+            subtext: "packet of 10 ml Eye Drop",
+            price: "Rs.12.53",
+            lprice: "Rs.12.66",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/a90e8171-14e4-4cfc-b7b6-ff020314898c.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            title: "DERMAMOIST SOAP",
+            subtitle: "DERMAMOIST SOAP",
+            subtext: "packet of 75 gm Soap",
+            price: "Rs.69.30",
+            lprice: "Rs.70.00",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/46e44075-7fa5-4623-b859-1ae4dab1e3b2.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838",
+            title: "ALFABOL CAPSULE",
+            subtitle: "ALFABOL CAPSULE",
+            subtext: "strip of 10 capsules",
+            price: "Rs.49.50",
+            lprice: "Rs.50.00",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/db4d96c4-ad8c-4d74-81b0-7299a8c2520a.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            title: "ECTIVLYTE ORS POWDER",
+            subtitle: "ECTIVLYTE ORS POWDER",
+            subtext: "box of 21.8 gm Powder",
+            price: "Rs.17.82",
+            lprice: "Rs.18.00",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/4aaa539c-e78f-46ba-ac73-f0784d8b386e.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            title: "SBL GRAPHITES DILUTION 200 C",
+            subtitle: "SBL FORMICA RUFA DILUTION…",
+            subtext: "bottle of 30 ml Dilution",
+            price: "Rs.94.05",
+            lprice: "Rs.95.00",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/92662c8c-1bb8-4517-944c-9a6b1bc7a15e.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838",
+            title: "SBL GINSENG DILUTION 200 CH",
+            subtitle: "SBL GINSENG DILUTION 200…",
+            subtext: "bottle of 30 ml Dilution",
+            price: "Rs.94.05",
+            lprice: "Rs.95.00",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/ae6673f3-2b32-4a55-bd02-67d5ca508bc8.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            title: "HEMOLON PLUS SYRUP",
+            subtitle: "HEMOLON PLUS SYRUP",
+            subtext: "bottle of 200 ml Syrup",
+            price: "Rs.70.98",
+            lprice: "Rs.71.70",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/9d30d1a5-9106-4996-b52e-82b16cdbe4f8.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            title: "BENGEL 2.5% GEL",
+            subtitle: "BENGEL 2.5% GEL",
+            subtext: "tube of 30 gm Gel",
+            price: "Rs.123.75",
+            lprice: "Rs.125.00",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/a173ab68-ba42-46ff-8f15-a66c836d585d.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838",
+            title: "REGEN CAPSULE",
+            subtitle: "REGEN CAPSULE",
+            subtext: "strip of 10 capsules",
+            price: "Rs.87.12",
+            lprice: "Rs.88.00",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/290b9166-f46a-475c-a489-cb191659271f.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            title: "ZIB SYRUP",
+            subtitle: "ZIB SYRUP",
+            subtext: "bottle of 200 ml Syrup",
+            price: "Rs.119.79",
+            lprice: "Rs.121.00",
+        },
+
+        {
+            image_url: "https://n.nordstrommedia.com/id/sr3/a53158b4-89ab-4d57-abbe-38d357a4e899.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            title: "RILANX CAPSULE",
+            subtitle: "RILANX CAPSULE",
+            subtext: "bottle of 30 capsules",
+            price: "Rs.92.78",
+            lprice: "Rs.93.72",
+        },
+    ]
+    let count = 0;
+    let body = document.querySelector("body");
+    let div = document.createElement("div");
+    div.setAttribute("class", "div");
+    for(let i = 0; i < 4; i++) {
+        const wrapper = document.createElement("div");
+        wrapper.setAttribute("class", "wrapper");
+        for(let index = 0; index < 6; index++) {
+            const childDiv = document.createElement("div");
+            // childDiv.setAttribute("id", arr[count].id); 
+            childDiv.setAttribute("class", "child-div");
+
+            wrapper.appendChild(childDiv);
+
+            let img = document.createElement("img");
+            img.setAttribute("class", "img");
+            img.setAttribute("src", arr[count].image_url);
+            img.setAttribute("title", arr[count].title);
+            childDiv.append(img);
+            img.addEventListener("click", function() {
+                localStorage.setItem("currentProduct", JSON.stringify(arr[count]))
+                window.location.href = "cart.html"
+            })
+
+            let subtitle = document.createElement("p");
+            subtitle.setAttribute("class", "subtitle");
+            subtitle.innerText = arr[count].subtitle;
+            childDiv.append(subtitle);
+
+            let subtext = document.createElement("p");
+            subtext.setAttribute("class", "subtext");
+            subtext.innerText = arr[count].subtext;
+            childDiv.append(subtext);
+
+            let subletter = document.createElement("p")
+            subletter.setAttribute("class", "subletter")
+            subletter.innerText = arr[count].subletter;
+            childDiv.append(subletter);
+
+            let price = document.createElement("p");
+            price.setAttribute("class", "price");
+            price.innerText = arr[count].price;
+            childDiv.append(price);
+
+            let lprice = document.createElement("p");
+            lprice.setAttribute("class", "lprice");
+            lprice.innerText = arr[count].lprice;
+            childDiv.append(lprice);
+
+            count++;
+
+           // div.appendChild(wrapper);
+
+
+          
+           
+            
+        }
+        div.appendChild(wrapper);
+    }
+    body.append(div);
+    
+    // function handlePriceSort() {
+    //   var selected = document.querySelector("#priceSort").value;
+    //   console.log(selected);
+    //   if (selected == "high") {
+    //     arr.sort(function (a, b) {
+    //       return Number(b.price) - Number(a.price);
+    //     });
+    //   }
+    //   if (selected == "low") {
+    //     arr.sort(function (a, b) {
+    //       return Number(a.price) - Number(b.price);
+    //     });
+    //   }
+    //   //console.log(products);
+    //   displayItem(arr);
+    // }
+
+
+    // var arr = JSON.parse(localStorage.getItem("shoppingItems"));
+    // var cart = JSON.parse(localStorage.getItem("cartItems")) || [];
+    // // console.log(cart.length);
+    // document.querySelector("button").textContent = cart.length;
+    // displayItem(products);
+    // function handleNameSort() {
+    //   var selected = document.querySelector("#nameSort").value;
+    //   console.log(selected);
+  
+    //   if (selected == "asc") {
+    //     products.sort(function (a, b) {
+    //       if (a.name > b.name) return 1;
+    //       if (a.name < b.name) return -1;
+    //       return 0;
+    //     });
+    //   }
+    //   if (selected == "dsc") {
+    //     products.sort(function (a, b) {
+    //       if (a.name > b.name) return -1;
+    //       if (a.name < b.name) return 1;
+    //       return 0;
+    //     });
+    //   }
+    //   displayItem(products);
+    // }
+  
+    // function displayItem(products) {
+    //   document.querySelector("#cont").textContent = "";
+    //   products.map(function (elem) {
+    //     var div = document.createElement("div");
+    //     var img = document.createElement("img");
+    //     img.setAttribute("src", elem.image);
+  
+    //     var h2 = document.createElement("h2");
+    //     h2.textContent = elem.name;
+  
+    //     var price = document.createElement("p");
+    //     price.textContent = elem.price;
+  
+    //     var button = document.createElement("button");
+    //     button.textContent = "add to cart";
+    //     button.addEventListener("click", function () {
+    //       console.log(elem);
+    //       addToCart(elem);
+    //     });
+  
+    //     div.append(img, h2, price, button);
+    //     document.querySelector("#cont").append(div);
+    //   });
+    // }
+  
+    // function addToCart(elem) {
+    //   console.log(elem);
+    //   cart.push(elem);
+    //   localStorage.setItem("cartItems", JSON.stringify(cart));
+    // }
+
+     
+
+
+
+
+
+
+
+    // body.append(div);
+    document.querySelector("img").addEventListener("click", function () {
+        window.location.href = "cart.html";
+        
+    })
+    document.querySelector(".subtitle").addEventListener("click", function () {
+        window.location.href = "cart.html";
+    })
+
+</script>
+
+
+
+
+
+
+
+

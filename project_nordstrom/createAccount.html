@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            div {
+                line-height: 50px;
+                width: 400px;
+                height: 500px;
+                margin: auto;
+            }
+            input {
+                height: 40px;
+                width: 325px;
+            }
+            button {
+                margin-top: 15px;
+                width: 325px;
+                height: 40px;
+                background: #00819d none!important;
+                border-color: #00819d;
+                color: #fff!important;
+                font-weight: 400;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Create account</h1>
+            <label>Email</label><br>
+            <input id="email" type="email" placeholder="Enter Your Email"/><br>
+            <label>First name</label><br> 
+            <input id="fName" type="text" placeholder="Enter Your First name"/><br>
+            <label>Last name</label><br>
+            <input id="lName" type="text" placeholder="Enter Your last name"/><br>
+            <label>Create PassWord</label><br>
+            <input id="pass" type="password" placeholder="Enter Your password"/><br>
+            <button>Create Account</button>
+        </div>
+    </body>
+</html>
+
+
+<script>
+    document.querySelector("button").addEventListener("click", signUp);
+    var userArr = JSON.parse(localStorage.getItem("userData")) || [];
+
+    function signUp(e) {
+        var email = document.getElementById("email")
+        email.setAttribute = email.value
+        var fName= document.getElementById("fName").value;
+        var lName = document.getElementById("lName").value;
+        var pass = document.getElementById("pass").value;
+
+        var isEmailTaken = false 
+        for(var i = 0; i < userArr.length; i++) {
+            if(userArr[i].emailAddress === email) {
+                isEmailTaken = true
+                break;
+            }
+        }
+
+        var userCredentials = {
+            emailAddress: email,
+            firstName: fName, 
+            lastName:lName,
+            password: pass,
+        };
+        console.log({isEmailTaken});
+        if(isEmailTaken) {
+            alert("User already exist.")
+        } else {
+            alert("User login successfuly")
+            userArr.push(userCredentials);
+            localStorage.setItem("userData", JSON.stringify(userArr))
+            window.location.href = "homePage.html";
+        }
+    }   
+</script>
