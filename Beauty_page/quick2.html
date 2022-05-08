@@ -11,31 +11,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@300&family=Poppins:wght@300&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="view.css">
+    <link rel="stylesheet" href="quicker.css">
 </head>
 <body>
     
-    <div id="view">
+    <div id="viewer">
         
 
+       
     </div>
 
     
 
+
+
+
+
 </body>
 </html><script type="module">
-   let view = JSON.parse(localStorage.getItem("men")) ;
+   let view = JSON.parse(localStorage.getItem("view")) ;
    console.log(view) ;
 
    import Select from "./select.js" ;
-   
 
-   let container=document.querySelector("#view") ;
+   let container=document.querySelector("#viewer") ;
 
     
-     view.forEach(( {imgUrl,category,title,pre_price,free })=>{
+     view.forEach(( {url,type,name,price,free })=>{
                              let div1 = document.createElement("div") ;
                              div1.setAttribute('id','img') ;
+
+                            //  let div2 = document.createElement('div') ;
+                            //  div2.setAttribute('id','texts') ;
 
                              let img = document.createElement('img') ;
                              img.setAttribute('class','product')
@@ -44,12 +51,6 @@
                              let p = document.createElement("h1") ;
                              let f = document.createElement('p') ;
                              let star = document.createElement('img') ;
-
-                             let sz = document.createElement('h4') ;
-                             let clr = document.createElement("h4") ;
-                             let del = document.createElement('h4') ;
-                             del.setAttribute("id",'deleivery')
-
                              star.setAttribute('class','star') ;
                               let sel = document.createElement("div");
                               sel.innerHTML=Select();
@@ -59,7 +60,7 @@
                               x.setAttribute('class','x') ;
                               x.addEventListener('click',xFN) ;
                               function xFN(){
-                                  window.location.href="men.html"
+                                  window.location.href="getinspired.html"
                               }
 
                               let add = document.createElement("button") ;
@@ -69,46 +70,46 @@
                              
                              
 
-                               sz.innerHTML="Size: Medium" ;
-                               clr.innerText="Color: Blue" ;
-                               del.innerText= `Deleivery By: ${new Date()}` ;
 
-                             img.src=imgUrl;
-                             ca.innerText=category;
-                             t.innerText=title;
-                             p.innerText=`₹${pre_price}  (50% off)`;
+                             img.src=url;
+                             ca.innerText=type;
+                             t.innerText=name;
+                             p.innerText=`₹${price}  (50% off)`;
                              f.innerText="Free Shipping on Shopping Above ₹50"
-                             star.src="https://png.pngitem.com/pimgs/s/398-3983504_transparent-alec-lightwood-png-1-out-of-5.png"
+                             star.src="https://png.pngitem.com/pimgs/s/398-3983504_transparent-alec-lightwood-png-1-out-of-5.png";
 
-                             var oArr = [] ;
+                             var oArr =  [] ;
 
                                     function addFN() {
                                         var obj = {
-                                            
-                                            catagory:category,
-                                            title:title,
-                                            imgUrl:imgUrl,
-                                            size: "Medium",
-                                            color: "Blue",
-                                            item: "6317870",
-                                            new_price: "12.64",
-                                            pre_price:pre_price,
-                                            delivery: new Date()
+                                            imgUrl:url,
+                                            catagory:type,
+                                            title:name,
+                                            pre_price:"43",
+                                            new_price:price,
+                                            color:"red",
+                                            delivery:new Date(),
+                                            item:"34567",
+                                            size:"medium"
+ 
                                         }
                                         oArr.push(obj) ;
                                         console.log(oArr) ;
                                         localStorage.setItem("cartData",JSON.stringify(oArr));
-                                        // alert("Product Added In Your bag") ;
+                                        alert("Product Added In Your bag") ;
                                         add.style.backgroundColor="green" ;
                                         add.innerText="Added To Your Bag"
                                         let done = document.createElement("img") ;
                                         done.src="https://c.tenor.com/BntXpMlrGuEAAAAC/check-correct.gif" ;
                                         done.setAttribute("class",'done')
                                         div1.append(done) ;
-                                        window.location = "../Cart_Page/cartPage.html"
+
                                         
                                     }
-                              div1.append(img,star,ca,t,p,f,sel,sz,clr,add,x) ;
+
+
+
+                              div1.append(img,star,ca,t,p,f,sel,add,x) ;
                               container.append(div1)
 
 

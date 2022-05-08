@@ -38,3 +38,7 @@
             alert("Your order is out for delivery")
         },7000);
     }
+
+    document.getElementById("navbar_Image").addEventListener("click",redToHome)
+
+   

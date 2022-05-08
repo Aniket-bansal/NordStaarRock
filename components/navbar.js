@@ -1,7 +1,7 @@
 function navbar (){
     return`
     <div id="upper_search">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Nordstrom_Rack_logo_2021.svg/512px-Nordstrom_Rack_logo_2021.svg.png?20211225005334"/>
+            <img id="redTohome" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Nordstrom_Rack_logo_2021.svg/512px-Nordstrom_Rack_logo_2021.svg.png?20211225005334"/>
             <input type="text" id="query" placeholder="Search for products  or brands"/>
             <div id="icons">
                 <!-- sign-up -->
@@ -12,7 +12,7 @@ function navbar (){
                         <div class="signclose">x</div>
                         <br>
                         <div id="Signin">
-                            <button>Sign In|Create Account</button>
+                            <button ><a href="../siginnord/signin1.html">Sign In|Create Account</a></button>
                             <ul type="none">Your Account
                               <li>Wish List</li>
                               <li>The Nordy Club Rewards</li>
@@ -33,7 +33,7 @@ function navbar (){
                 </div>
 
                 <!-- cart -->
-            <a id="cart"><i class="fa-solid fa-bag-shopping"></i></a>
+            <a href="../Cart_Page/cartPage.html" id="cart"><i class="fa-solid fa-bag-shopping"></i></a>
             <!-- <div class="cart-modal">
                 <div class="cart-contents">
             

@@ -7,13 +7,15 @@ document.getElementById("shopping").innerHTML=`Shopping Bag (${cartData.length})
 document.getElementById("saved").innerHTML=`Shopping Bag (${saveData.length})`;
 
 
-import { quantity } from "../componentsH/quantity.js";
+import {bottom} from './bottom.js'
+// import { quantity } from "../componentsH/quantity.js";
 
 
 
 import {append} from "../componentsH/append.js";
 
 
+document.getElementById("bottom").innerHTML = bottom();
 let container = document.getElementById("container");
 append (cartData,container);
 
@@ -46,5 +48,6 @@ document.getElementById("estimated_total").innerText = `$${subTotal.toFixed(2)}`
 document.getElementById("check_out").addEventListener("click",checkOutFun)
 
 function checkOutFun(){
-    window.location.href = "payment.html"
+    window.location.href = "./payment.html"
+    // console.log("check")
 }

@@ -1,7 +1,7 @@
 function beauty(){
 return `
 <div id="menscloths">
-    <ul type="none"> Beauty: Get Inspired
+    <ul type="none"><a href="../Beauty_page/getinspired.html"> Beauty: Get Inspired</a>
   <li>Mother's Day Gifts</li>
   <li>New Arrivals</li>
    <li> Best Sellers</li>
@@ -18,7 +18,7 @@ return `
   </div>
 
   <div id="menscloths">
-  <ul type="none">Shop By Brand
+  <ul type="none"><a href="../Beauty_page/Allmakeup.html">Shop By Brand</a>
   <li>Charlotte Tilbury</li>
   <li>Clinique</li>
   <li>Drybar</li>
@@ -33,7 +33,7 @@ return `
   </div>
 
   <div id="menscloths">
-  <ul type="none">Makeup
+  <ul type="none"><a href="../Beauty_page/Allmakeup.html">Makeup</a>
   <li>Blush, Bronzer & Highlighter</li>
   <li>Brushes & Tools</li>
   <li>Concealer & Foundation</li>
@@ -51,7 +51,7 @@ return `
   </div>
 
   <div id="menscloths">
-  <ul type="none">Skin Care
+  <ul type="none"><a href="../Beauty_page/Allskincare.html">Skin Care</a>
   <li>Cleansers</li>
   <li>Exfoliators</li>
   <li>Eye Creams & Treatments</li>
@@ -69,7 +69,7 @@ return `
   </div>
 
   <div id="menscloths">
-  <ul type="none">Hair Care
+  <ul type="none"><a href="../Beauty_page/AllhairCare.html">Hair Care</a>
   <li>Hair & Scalp Treatments</li>
   <li>Hair Dryers & Styling Tools</li>
   <li>Eye Creams & Treatments</li>
@@ -77,7 +77,7 @@ return `
   <li>Shampoo & Conditioner</li>
   </ul>
   <br>
-  <ul type="none">Fragrance
+  <ul type="none"><a href="../Beauty_page/Allfragrance.html">Fragrance</a>
   <li>Candles & Diffusers</li>
   <li>Designer Fragrance</li>
   <li>Gifts & Sets</li>
@@ -85,14 +85,14 @@ return `
   </ul>
  
   <br>
-  <ul type="none">Tools, Brushes & Makeup Bags
+  <ul type="none"><a href="../Beauty_page/Alltools.html">Tools, Brushes & Makeup Bags</a>
   <li>Bath & Body Tools</li>
   <li>Hair Styling Tools</li>
   <li>Makeup Brushes, Tools, & Bags</li>
   <li>Skin Care Tools</li>
   </ul>
   <br>
-  <ul type="none">Men's Grooming & Cologne</ul>
+  <ul type="none"><a href="../Beauty_page/Allmensgrooming.html">Men's Grooming & Cologne</a></ul>
   </div>
 
 `

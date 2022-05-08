@@ -21,7 +21,7 @@ return `
  </ul>
   </div>
   <div id="menscloths">
-  <ul type="none">Clothing
+  <ul type="none"><a href="../Men/activewear.html">Clothing</a>
   <li>Activewear</li>
   <li>Blazers</li>
   <li>Coats & Jackets</li>
@@ -44,7 +44,7 @@ return `
   </div>
 
   <div id="menscloths">
-  <ul type="none">Shoes
+  <ul type="none"><a href="../Men/shoes.html">Shoes</a>
   <li>Athletic & Running</li>
   <li>Boat Shoes</li>
   <li>Boots</li>

@@ -1,7 +1,7 @@
 function gifts(){
 return `
 <div id="menscloths">
-    <ul type="none"> Gifts: Get Inspired
+    <ul type="none"> <a href="../Beauty_page/mothersgift.html">Gifts: Get Inspired</a>
   <li>Gift Cards</li>
   <li>Wish List</li>
  </ul>

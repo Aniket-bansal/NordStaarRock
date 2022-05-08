@@ -224,3 +224,10 @@ function signin(){
     alert("Please Enter correct credentials")
   }
 }
+
+
+document.getElementById("redTohome").addEventListener("click",redToHome)
+
+function redToHome(){
+  window.location = "../index.html"
+}

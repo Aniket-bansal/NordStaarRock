@@ -22,7 +22,7 @@ function womensclothing(){
  </ul>
   </div>
   <div id="womenscloths">
-  <ul type="none">Clothing
+  <ul type="none"><a href="../project_nordstrom/women.html">Clothing</a>
   <li>Activewear</li>
   <li>Blazers</li>
   <li>Coats & Jackets</li>
@@ -45,7 +45,7 @@ function womensclothing(){
   </div>
    
   <div id="womenscloths">
-  <ul type="none">Shoes
+  <ul type="none"><a href="../project_nordstrom/women.html">Shoes</a>
   <li>Athletic & Running</li>
   <li>Boots & Booties</li>
   <li>Clogs</li>
