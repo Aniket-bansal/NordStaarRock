@@ -1,0 +1,55 @@
+#bottom{
+    height: 500px;
+    width: 100%;
+    background-color: snow;
+    margin-top: 20px;
+    display: flex;
+}
+#a1{
+    height: 100%;
+     width: 14%;
+    margin-top: 50px;
+}
+#a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 20px;
+    font-family: 'Inter', sans-serif;
+}
+#b{
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    margin-left: 20px;
+    font-family: 'Inter', sans-serif;
+}
+#a:hover{
+    text-decoration: underline;
+    color: teal;
+}
+#b:hover{
+    text-decoration: underline;
+    color: teal;
+}
+#a11{
+    display: flex;
+    margin-top: 50px;
+}
+#a11 img{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+#top{
+    height: 60px;
+    width: 60px;
+    margin-left: 150px;
+     cursor: pointer;
+     margin-top: 30px;
+}
