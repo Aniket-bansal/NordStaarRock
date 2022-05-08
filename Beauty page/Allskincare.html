@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NordstormRack | Beauty | skincare</title>
+   <link rel="stylesheet" href="commonstyle.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <div id="mainhead">
+
+
+        <!-- enter main home page href -->
+        
+        <p><a href="">HOME</a></p>
+        <p>  /</p>  
+        <p>Beauty</p>
+        <p>/</p>
+        <p>Skin Care</p>
+        
+    </div>
+    <div id="bigdiv">
+       <div id="div1">
+           <hr>
+           <div>
+               <div><p>Price</p></div>
+               <div><p>+</p></div>
+           </div>
+           <hr>
+           <div>
+            <div><p>Color</p></div>
+            <div><p>+</p></div>
+           </div>
+           <hr>
+           <div>
+            <div><p>Brand</p></div>
+            <div><p>+</p></div>
+           </div>
+           <hr>
+           <div>
+            <div><p>Gender</p></div>
+            <div><p>+</p></div>
+           </div>
+           <hr>
+           <div>
+            <div><p>Consern</p></div>
+            <div><p>+</p></div>
+           </div>
+           <hr>
+       </div>
+
+
+       <div id="div2">
+           <!-- <div id="div2-1"> -->
+               <h2>Skin care</h2>
+               <hr>
+               <div id="div2-1">
+                   <div id="itemnumber"><p></p></div>
+                   <div id="sorting">
+                    <select name="sorted" id="sorted">
+                        <option value="SORT BY :">SORT BY FEATURED</option>
+                       <option value="Price low to High">Price low to High</option>
+                       <option value="Price high to low">Price high to low</option>
+                       <option value="Top Rated">Top Rated</option>
+                       <option value="Best Sellers">Best Sellers</option>
+                       <option value="New Arrivals">New Arrivals</option>
+                     </select>
+                   </div>
+               </div>
+               <div id="productbox"></div>
+           
+       </div>
+    </div>
+
+    <img src="	https://n.nordstrommedia.com/id/ada19f59-fec4-4365-95a8-458a289a9303.jpeg?h=180&w=1600
+    " alt="">
+
+    <!-- for footer -->
+
+    <div id="bottom">
+
+    </div>
+    
+</body>
+</html>
+<script type="module">
+    import {bottom} from "./bottom.js"
+    document.getElementById("bottom").innerHTML=bottom()
+    var makeup=[
+    { 
+               imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2cc9bca0/crop/026411824_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=p_s_",
+               catagory:"New Fragrance",
+              title:"Butterfly",
+               type_name:"Mini Purfume Spray",
+               new_price:21.00,
+              
+           },
+           {
+               imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb7275763/crop/026414209_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=p_s_",
+               catagory:"New!",
+               title:"Waikiki Beach Coconut",
+               type_name:"Fine Fragrance Mist",
+               new_price:17.00,
+               
+           },
+
+           {
+               imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw67bdae98/crop/026398463_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=p_s_",
+               catagory:"New Fragrance",
+               title:"Fresh Getway",
+               type_name:"Shower Gel",
+               new_price:13.50,              
+              
+           },
+           {
+               imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe7be776d/crop/026414524_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=p_s_",
+               catagory:"New!",
+               title:"Bahamas Passionfruit & Banana",
+               type_name:"Super Smooth Body Lotion",
+               new_price:14.50,
+              
+           },
+           {
+               imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwfd659d04/crop/026414205_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=p_s_",
+               catagory:"New!",
+               title:"Japanese Chery Blossom",
+               type_name:"Shower Gel",
+               new_price:13.50,
+            
+           },
+           {
+               imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwdbb3a85e/crop/026402543_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=p_s_",
+               catagory:"Online Exclusive",
+               title:"Fresh Cut Lilancs",
+               type_name:"Shower Gel",
+               new_price:14.50,
+               
+           },
+           {
+               imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8e5d4ce7/crop/026412996_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=p_s_",
+               catagory:"New Fragrance",
+               title:"Pink Pineapple Sunrise",
+               type_name:"Ultimate Hydration Body Cream",
+               new_price:18.60,
+               
+           },
+           {
+             imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwaedd785b/crop/026412623_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=p_s_",
+               catagory:"New",
+               title:"Japanese Cherry Blossom",
+               type_name:"Fine Fragrance Mist",
+               new_price:8.50,
+               
+           },
+          
+           {
+               imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8e5d4ce7/crop/026412996_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=p_s__",
+               catagory:"New!",
+               title:"Saltwater Breeze",
+               type_name:"Ultimate Hydration Body Cream",
+               new_price:17.50,
+              
+           },
+           {
+               imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwaeae6a1a/crop/026271361_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=p_s__",
+               catagory:" regular New!",
+               title:"pure wounder",
+               type_name:" Body Cream",
+               new_price:15.20,
+               
+           },
+           {
+               imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe48030b9/crop/026397467_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=p_s_",
+               catagory:"New!",
+               title:"Breeze",
+               type_name:" Hydration Body Cream",
+               new_price:16.50,
+               
+           },
+           {
+               imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc755a626/crop/026402544_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=p_s_",
+               catagory:"New!",
+               title:"a thousand wishes Breeze",
+               type_name:"Ultimate Body Cream",
+               new_price:154.90,
+               
+           },
+           {
+               imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf8521fe1/crop/026414233_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=p_s_",
+               catagory:"regular!",
+               title:"Saltwater ",
+               type_name:"Ultimate Hydration Body Cream",
+               new_price:12.10,
+               
+           },
+          
+    ]
+
+
+
+    displaythings(makeup)
+    document.querySelector("#sorting").addEventListener("change",ManagebySorting)
+  function ManagebySorting(){
+      var selectedoption=document.querySelector("#sorted").value
+      if(selectedoption=="Price low to High")
+      {
+        makeup.sort(function(a,b){
+            return a.new_price-b.new_price
+        }) 
+      }
+      displaythings(makeup)
+
+      if(selectedoption=="Price high to low")
+      {
+       makeup.sort(function(a,b){
+            return b.new_price-a.new_price
+        }) 
+      }
+      displaythings(makeup)
+
+      if(selectedoption=="Top Rated")
+      {
+        makeup.sort(function(a,b){
+            return b.new_price==a.new_price
+        }) 
+      }
+      displaythings(makeup)
+     
+
+if(selectedoption=="Best Sellers")
+{
+  makeup.sort(function(a,b){
+     
+    if( b.title<a.title) return -1;
+    if( b.title>a.title) return 1;
+    return 0;
+  }) 
+}
+displaythings(makeup)
+
+
+if(selectedoption=="New Arrivals")
+{
+
+    makeup.sort(function(a,b){
+    if( b.title<a.title) return 1;
+    if( b.title>a.title) return -1;
+    return 0;
+    })
+        
+}
+displaythings(makeup)
+} 
+
+ 
+
+
+
+function displaythings(makeup){
+
+    document.querySelector("#productbox").innerHTML=""
+       makeup.map(function(elem){
+           var box=document.createElement("div")
+           
+           var img=document.createElement("img")
+           img.src=elem.imgUrl
+           img.setAttribute("class","imgdecorate")
+           img.addEventListener("click",function(){
+               check(elem)
+           })
+
+           var type1=document.createElement("p")
+           type1.innerText=elem.catagory+"Beauty product"
+           type1.setAttribute("class","italicstyle")
+           
+           var name1=document.createElement("p")
+           name1.innerText=elem.title
+          name1.setAttribute("class","createname")
+
+           var nametype=document.createElement("p")
+           nametype.innerText=elem.type_name
+           nametype.setAttribute("class","createtypename")
+
+           var price1=document.createElement("p")
+           price1.innerText="$"+elem.new_price
+           price1.setAttribute("class","resizeprice")
+
+          
+           var btn=document.createElement("button")
+           btn.innerText="Quick View"
+           btn.setAttribute("class","q")
+           btn.addEventListener("click", function(){
+               check(elem)
+           })
+
+         
+           console.log(img,type1,name1,nametype,price1,btn)
+           
+           box.append(img,btn,type1,name1,nametype,price1);
+
+           document.querySelector("#productbox").append(box);
+            
+
+       })
+    }
+
+       var length=makeup.length;
+document.querySelector("#div2>#div2-1>#itemnumber>p").innerText=length+"   items"
+
+//  var bag=[];
+// function addtobag(elem){
+//     bag.push(elem)
+//     window.location.href="quickview.html"
+//  localStorage.setItem("view",JSON.stringify(bag))
+// }
+
+var checkbag=[];
+function check(elem){
+    checkbag.push(elem)
+    localStorage.setItem("view",JSON.stringify(checkbag))
+    window.location.href="quicker.html"
+}
+
+</script>

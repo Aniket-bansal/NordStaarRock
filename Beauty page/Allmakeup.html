@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NordstormRack | Beauty | makeup</title>
+   <link rel="stylesheet" href="commonstyle.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <div id="mainhead">
+
+
+        <!-- enter main home page href -->
+        
+        <p><a href="">HOME</a></p>
+        <p>  /</p>  
+        <p>Beauty</p>
+        <p>/</p>
+        <p>Makeup</p>
+        
+    </div>
+    <div id="bigdiv">
+       <div id="div1">
+           <hr>
+           <div>
+               <div><p>Price</p></div>
+               <div><p>+</p></div>
+           </div>
+           <hr>
+           <div>
+            <div><p>Color</p></div>
+            <div><p>+</p></div>
+           </div>
+           <hr>
+           <div>
+            <div><p>Brand</p></div>
+            <div><p>+</p></div>
+           </div>
+           <hr>
+           <div>
+            <div><p>Gender</p></div>
+            <div><p>+</p></div>
+           </div>
+           <hr>
+           <div>
+            <div><p>Consern</p></div>
+            <div><p>+</p></div>
+           </div>
+           <hr>
+       </div>
+
+
+       <div id="div2">
+           <!-- <div id="div2-1"> -->
+               <h2>Makeup</h2>
+               <hr>
+               <div id="div2-1">
+                   <div id="itemnumber"><p></p></div>
+                   <div id="sorting">
+                    <select name="sorted" id="sorted">
+                        <option value="SORT BY :">SORT BY FEATURED</option>
+                       <option value="Price low to High">Price low to High</option>
+                       <option value="Price high to low">Price high to low</option>
+                       <option value="Top Rated">Top Rated</option>
+                       <option value="Best Sellers">Best Sellers</option>
+                       <option value="New Arrivals">New Arrivals</option>
+                     </select>
+                   </div>
+               </div>
+               <div id="productbox"></div>
+           
+       </div>
+    </div>
+
+    <img src="	https://n.nordstrommedia.com/id/ada19f59-fec4-4365-95a8-458a289a9303.jpeg?h=180&w=1600
+    " alt="">
+
+    <!-- for footer -->
+
+    <div id="bottom">
+
+    </div>
+    
+</body>
+</html>
+<script type="module">
+    import {bottom} from "./bottom.js"
+    document.getElementById("bottom").innerHTML=bottom()
+var makeup=[
+    {imgUrl:"https://n.nordstrommedia.com/id/sr3/263c2d80-12ec-41bb-b43c-fbbeda7cf9de.jpeg?h=365&w=240&dpr=2",
+    catagory:"New!",
+        title:"Eucalyptus ",
+        type_name:"Bath Soak",
+        new_price:18.50,},
+
+        {imgUrl:"https://n.nordstrommedia.com/id/sr3/a94dfd84-46c9-43f8-9147-8c5f24982089.jpeg?h=365&w=240&dpr=2",
+        catagory:"New!",
+        title:" Spearmint",
+        type_name:"Body Wash and Foam Bath",
+        new_price:14.50,},
+
+        {imgUrl:"https://n.nordstrommedia.com/id/sr3/830f0750-eae6-4853-a457-3b109f15d9c0.jpeg?h=365&w=240&dpr=2",
+        catagory:"New!",
+        title:"Eucalint",
+        type_name:"Moisturizing Body Wash",
+        new_price:15.50,},
+
+        {imgUrl:"https://n.nordstrommedia.com/id/sr3/20161352-84cb-47d0-b263-60f9c61bc458.jpeg?h=365&w=240&dpr=2",
+        catagory:"New!",
+        title:"Spearmint",
+        type_name:"Essential Oil Mist",
+        new_price:14.50,},
+
+        {imgUrl:"https://n.nordstrommedia.com/id/sr3/5300b95c-c679-4954-bc90-c62ee0ebefbf.jpeg?h=365&w=240&dpr=2",
+        catagory:"New!",
+        title:"Ucalymint",
+        type_name:"Concentrated Room Spray",
+        new_price:8.50,},
+        {imgUrl:"https://n.nordstrommedia.com/id/sr3/4a173a4f-069e-4103-9292-2a25fde8a4a3.jpeg?h=365&w=240&dpr=2",
+        catagory:"New!",
+        title:" Spearmint",
+        type_name:"Single Wick Candle",
+        new_price:15.50,},
+        {imgUrl:"https://n.nordstrommedia.com/id/sr3/5300b95c-c679-4954-bc90-c62ee0ebefbf.jpeg?h=365&w=240&dpr=2",
+        catagory:"New!",
+        title:"armint",
+        type_name:"Wallflowers Fragrance Refill",
+        new_price:7.50,},
+        {imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5f87a3ee/crop/026442445_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+        catagory:"New!",
+        title:"Eucalyptus Spearmint",
+        type_name:"PocketBac Hand Sanitizers, 5-Pack",
+        new_price:8.50,},
+        {imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw018cbcb6/crop/026437372_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+        catagory:"New!",
+        title:"Lavender Vanilla",
+        type_name:"Single Wick Candle",
+        new_price:15.50,},
+        {imgUrl:"https://n.nordstrommedia.com/id/sr3/fc808601-6004-4d86-a3cf-57037c4c2159.jpeg?h=365&w=240&dpr=2",
+        catagory:"New!",
+        title:"Vanilla Patchouli",
+        type_name:"Concentrated Room Spray",
+        new_price:8.50,},
+        {imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd635afb6/crop/026426979_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+        catagory:"New!",
+        title:"Lavender Cedarwood",
+        type_name:"Single Wick Candle",
+        new_price:15.50,},
+        {imgUrl:"https://n.nordstrommedia.com/id/sr3/5a65a98d-7f9d-4cf5-bc27-49111b21088b.jpeg?h=365&w=240&dpr=2",
+        catagory:"New!",
+        title:"Vanilla Patchouli",
+        type_name:"Single Wick Candle",
+        new_price:15.50,},
+        {imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8f332f01/crop/026395950_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+        catagory:"New!",
+        title:"Vanilla Patchouli",
+        type_name:"Wallflowers Fragrance Refill",
+        new_price:7.50,},
+        {imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2de63435/crop/026426986_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+        catagory:"New!",
+        title:"Lemon Rosemary",
+        type_name:"Single Wick Candle",
+        new_price:15.50,},
+        {imgUrl:"https://n.nordstrommedia.com/id/sr3/bbdb0c63-5f25-4123-b642-8410b6ec1d9d.jpeg?h=365&w=240&dpr=2",
+        catagory:"Online Exclusive",
+        title:"Lavender Vanilla",
+        type_name:"Wallflowers Refills 2-Pack",
+        new_price:14.50,},
+        {imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwbb110e88/crop/026299226_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+        catagory:"Online Exclusive",
+        title:"Grapefruit Sage",
+        type_name:"Single Wick Candle",
+        new_price:14.50,},
+        {imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw3279864c/crop/026353202_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+        catagory:"Online Exclusive",
+        title:"Lavender Vanilla",
+        type_name:"Body Wash and Foam Bath",
+        new_price:14.50,},
+        {imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwdcddfece/crop/026410280_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+        catagory:"Online Exclusive",
+        title:"Vanilla Patchouli",
+        type_name:"3-Wick Candle",
+        new_price:24.50,},
+
+        {imgUrl:"https://n.nordstrommedia.com/id/sr3/3da06c76-308b-4650-a6a0-5f32d0640004.jpeg?h=365&w=240&dpr=2",
+        catagory:"Online Exclusive",
+        title:"Eucalyptus Spearmint",
+        type_name:"3-Wick Candle",
+        new_price:24.50,},
+        {imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9d13677e/crop/026353204_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+        catagory:"Online Exclusive",
+        title:"Eucalyptus Spearmint",
+        type_name:"Body Wash and Foam Bath",
+        new_price:14.50,},
+        {imgUrl:"https://n.nordstrommedia.com/id/sr3/b1b0de91-a16d-4aa4-a836-1b91f4c86220.jpeg?h=365&w=240&dpr=2_",
+        catagory:"Online Exclusive",
+        title:"Orange Ginger",
+        type_name:"3-Wick Candle",
+        new_price:24.50,},
+        {imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc9b51fd5/crop/026353212_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+        catagory:"Online Exclusive",
+        title:"Lavender Vanilla",
+        type_name:"Moisturizing Body Lotion",
+        new_price:15.50,},
+        {imgUrl:"https://n.nordstrommedia.com/id/sr3/dda22861-3b41-497a-8e7e-40b2722a075b.jpeg?h=365&w=240&dpr=2",
+        catagory:"Online Exclusive",
+        title:"Eucalyptus Spearmint",
+        type_name:"3-Wick Candle",
+        new_price:24.50,},
+        {imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc0c14c75/crop/026353220_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+        catagory:"Online Exclusive",
+        title:"Eucalyptus Spearmint",
+        type_name:"Ultimate Hydration Body Cream",
+        new_price:16.50,},
+        {imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8a157107/crop/026353232_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+        catagory:"Online Exclusive",
+        title:"Lavender Vanilla",
+        type_name:"Pillow and Body Mist",
+        new_price:14.50,},
+        {imgUrl:"https://n.nordstrommedia.com/id/sr3/37ab8218-165f-474d-adac-57f179fd3110.jpeg?h=365&w=240&dpr=2",
+        catagory:"Online Exclusive",
+        title:"Orange Ginger",
+        type_name:"Moisturizing Body Lotion",
+        new_price:15.50,},
+        {imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc7dcef51/crop/026353201_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+        catagory:"Online Exclusive",
+        title:"Eucalyptus Tea",
+        type_name:"Body Wash and Foam Bath",
+        new_price:14.50,},
+        {imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf5950fc6/crop/026353224_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+        catagory:"Online Exclusive",
+        title:"Orange Ginger",
+        type_name:"Ultimate Hydration Body Cream",
+        new_price:16.50,},
+        {imgUrl:"https://n.nordstrommedia.com/id/sr3/bd370cee-83b7-4e09-829c-5e4005c0527a.jpeg?h=365&w=240&dpr=2",
+        catagory:"Online Exclusive",
+        title:"Eucalyptus Spearmint",
+        type_name:"Car Fragrance Refill",
+        new_price:4.50,},
+        {imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2f3930fa/crop/026353211_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+        catagory:"Online Exclusive",
+        title:"Eucalyptus Tea",
+        type_name:"Moisturizing Body Lotion",
+        new_price:15.50,},
+
+        {imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe53a2a50/crop/026361031_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+        catagory:"Online Exclusive",
+       title:"Eucalyptus Spearmin",
+        type_name:"Hand Cream",
+        new_price:7.50,},
+        
+        {imgUrl:"https://n.nordstrommedia.com/id/sr3/34d7b465-30c2-478e-915a-a5f970026136.jpeg?h=365&w=240&dpr=2",
+        catagory:"Online Exclusive",
+       title:"Lavender Vanilla",
+        type_name:"PocketBac Hand Sanitizers, 5-Pack",
+        new_price:8.50,},
+        {imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw59988c49/crop/026353203_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+        catagory:"Online Exclusive",
+        title:"Black Chamomile",
+        type_name:"Body Wash and Foam Bath",
+        new_price:14.50,},
+        {imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw740637cf/hires/026455708_alt_1.jpg?sh=413&yocs=o_s_",
+        catagory:"New!",
+        title:"Eucalyptus Spearmint",
+        type_name:"Shea Butter Cleansing Bar",
+        new_price:8.50,},
+        {imgUrl:"https://n.nordstrommedia.com/id/sr3/d86cf51e-f0cc-4a0e-9aeb-69a530c44f26.jpeg?h=365&w=240&dpr=2",
+        catagory:"New!",
+        title:"Lavender Vanilla",
+        type_name:"Hand Cream",
+        new_price:7.50,},
+
+        {imgUrl:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw95858d70/crop/026353223_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+        catagory:"New!",
+        title:"Black Chamomile",
+        type_name:"Ultimate Hydration Body Cream",
+        new_price:16.50,},
+
+        {imgUrl:"https://n.nordstrommedia.com/id/sr3/713bd70e-c5eb-46fd-b5aa-18f5cba2f18e.jpeg?h=365&w=240&dpr=2",
+        catagory:"New!",
+        title:"Lavender Vanilla",
+        type_name:"Shea Butter Cleansing Bar",
+        new_price:8.50,},
+    ]
+
+
+
+    displaythings(makeup)
+    document.querySelector("#sorting").addEventListener("change",ManagebySorting)
+  function ManagebySorting(){
+      var selectedoption=document.querySelector("#sorted").value
+      if(selectedoption=="Price low to High")
+      {
+        makeup.sort(function(a,b){
+            return a.new_price-b.new_price
+        }) 
+      }
+      displaythings(makeup)
+
+      if(selectedoption=="Price high to low")
+      {
+       makeup.sort(function(a,b){
+            return b.new_price-a.new_price
+        }) 
+      }
+      displaythings(makeup)
+
+      if(selectedoption=="Top Rated")
+      {
+        makeup.sort(function(a,b){
+            return b.new_price==a.new_price
+        }) 
+      }
+      displaythings(makeup)
+     
+
+if(selectedoption=="Best Sellers")
+{
+  makeup.sort(function(a,b){
+     
+    if( b.title<a.title) return -1;
+    if( b.title>a.title) return 1;
+    return 0;
+  }) 
+}
+displaythings(makeup)
+
+
+if(selectedoption=="New Arrivals")
+{
+
+    makeup.sort(function(a,b){
+    if( b.title<a.title) return 1;
+    if( b.title>a.title) return -1;
+    return 0;
+    })
+        
+}
+displaythings(makeup)
+} 
+
+ 
+
+
+
+function displaythings(makeup){
+
+    document.querySelector("#productbox").innerHTML=""
+       makeup.map(function(elem){
+           var box=document.createElement("div")
+           
+           var img=document.createElement("img")
+           img.src=elem.imgUrl
+           img.setAttribute("class","imgdecorate")
+           img.addEventListener("click",function(){
+               check(elem)
+           })
+
+           var type1=document.createElement("p")
+           type1.innerText=elem.catagory+"Beauty product"
+           type1.setAttribute("class","italicstyle")
+           
+           var name1=document.createElement("p")
+           name1.innerText=elem.title
+          name1.setAttribute("class","createname")
+
+           var nametype=document.createElement("p")
+           nametype.innerText=elem.type_name
+           nametype.setAttribute("class","createtypename")
+
+           var price1=document.createElement("p")
+           price1.innerText="$"+elem.new_price
+           price1.setAttribute("class","resizeprice")
+
+          
+           var btn=document.createElement("button")
+           btn.innerText="Quick View"
+           btn.setAttribute("class","q")
+           btn.addEventListener("click", function(){
+               check(elem)
+           })
+
+         
+           console.log(img,type1,name1,nametype,price1,btn)
+           
+           box.append(img,btn,type1,name1,nametype,price1);
+
+           document.querySelector("#productbox").append(box);
+            
+
+       })
+    }
+
+       var length=makeup.length;
+document.querySelector("#div2>#div2-1>#itemnumber>p").innerText=length+"   items"
+
+//  var bag=[];
+// function addtobag(elem){
+//     bag.push(elem)
+//     window.location.href="quickview.html"
+//  localStorage.setItem("view",JSON.stringify(bag))
+// }
+
+var checkbag=[];
+function check(elem){
+    checkbag.push(elem)
+    localStorage.setItem("view",JSON.stringify(checkbag))
+    window.location.href="quicker.html"
+}
+
+</script>

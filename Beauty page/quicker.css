@@ -1,0 +1,76 @@
+#viewer{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   margin-top: 100px;
+    width: 700px;
+    margin-left: 300px;
+  height: 600px;
+
+}
+
+ .product{
+   display: block;
+    height: 400px;
+    width: 280px;
+   
+}
+
+h3{
+    margin-top: -400px;
+}
+h3,h1,h4,p,select,button{
+   margin-left: 350px;
+   font-family: 'Inter', sans-serif;
+   
+   
+}
+h1{
+    color: grey;
+}
+button{
+    margin-top: 20px;
+    height: 40px;
+    width: 300px;
+    background-color: teal;
+    color: white;
+    border-width: 0px;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: white;
+    color: teal;
+    border-width: 1px;
+    border-color: teal;
+}
+p{
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+}
+.star{
+    
+    height: 70px;
+    width: 200px;
+    margin-left: 350px;
+    border-radius: 20px;
+}
+#img{
+    
+    height: 500px;
+}
+#select{
+    height: 30px;
+    width: 200px;
+    border-color: teal;
+    color: teal;
+}
+.x{
+    margin-top: -350px;
+    margin-left: 670px;
+    cursor: pointer;
+}
+.done{
+    height: 100px;
+    width: 100px;
+    margin-left: 550px;
+    margin-top: 300px;
+}

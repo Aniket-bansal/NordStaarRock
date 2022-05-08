@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nordstrom Rack: Shop Clothes, Shoes, Jewelry, Beauty and Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@300&family=Poppins:wght@300&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="quicker.css">
+</head>
+<body>
+    
+    <div id="viewer">
+        
+
+       
+    </div>
+
+    
+
+
+
+
+
+</body>
+</html><script type="module">
+   let view = JSON.parse(localStorage.getItem("view")) ;
+   console.log(view) ;
+
+   import Select from "./select.js" ;
+
+   let container=document.querySelector("#viewer") ;
+
+    
+     view.forEach(( {imgUrl,catagory,title,new_price,free })=>{
+                             let div1 = document.createElement("div") ;
+                             div1.setAttribute('id','img') ;
+
+                            //  let div2 = document.createElement('div') ;
+                            //  div2.setAttribute('id','texts') ;
+
+                             let img = document.createElement('img') ;
+                             img.setAttribute('class','product')
+                             let ca = document.createElement('h3') ;
+                             let t = document.createElement('h4') ;
+                             let p = document.createElement("h1") ;
+                             let f = document.createElement('p') ;
+                             let star = document.createElement('img') ;
+                             star.setAttribute('class','star') ;
+                              let sel = document.createElement("div");
+                              sel.innerHTML=Select();
+
+                              let x = document.createElement("h1");
+                              x.innerText="X";
+                              x.setAttribute('class','x') ;
+                              x.addEventListener('click',xFN) ;
+                              function xFN(){
+                                  window.location.href="allmakeup.html"
+                              }
+
+                              let add = document.createElement("button") ;
+                              add.innerText="Add To Bag" ;
+                              add.addEventListener("click",addFN);
+
+                             
+                             
+
+
+                             img.src=imgUrl;
+                             ca.innerText=catagory;
+                             t.innerText=title;
+                             p.innerText=`₹${new_price}  (50% off)`;
+                             f.innerText="Free Shipping on Shopping Above ₹50"
+                             star.src="https://png.pngitem.com/pimgs/s/398-3983504_transparent-alec-lightwood-png-1-out-of-5.png";
+
+                             var oArr =  [] ;
+
+                                    function addFN() {
+                                        var obj = {
+                                            imgUrl:imgUrl,
+                                            catagory:catagory,
+                                            title:title,
+                                            pre_price:"43",
+                                            new_price:new_price,
+                                            color:"red",
+                                            delivery:new Date(),
+                                            item:"34567",
+                                            size:"medium"
+ 
+                                        }
+                                        oArr.push(obj) ;
+                                        console.log(oArr) ;
+                                        localStorage.setItem("cartData",JSON.stringify(oArr));
+                                        alert("Product Added In Your bag") ;
+                                        add.style.backgroundColor="green" ;
+                                        add.innerText="Added To Your Bag"
+                                        let done = document.createElement("img") ;
+                                        done.src="https://c.tenor.com/BntXpMlrGuEAAAAC/check-correct.gif" ;
+                                        done.setAttribute("class",'done')
+                                        div1.append(done) ;
+
+                                        
+                                    }
+
+
+
+                              div1.append(img,star,ca,t,p,f,sel,add,x) ;
+                              container.append(div1)
+
+
+                              
+     })
+
+
+
+
+
+
+</script>
