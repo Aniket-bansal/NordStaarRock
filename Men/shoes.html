@@ -124,7 +124,7 @@
 	}
   };
 
-  fetch('https://v1-sneakers.p.rapidapi.com/v1/sneakers?limit=12', options)
+  fetch('https://v1-sneakers.p.rapidapi.com/v1/sneakers?limit=100', options)
 	.then(response => response.json())
 	.then(response => display(response.results))
 	.catch(err => console.error(err));

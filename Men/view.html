@@ -18,14 +18,9 @@
     <div id="view">
         
 
-       
     </div>
 
     
-
-
-
-
 
 </body>
 </html><script type="module">
@@ -90,17 +85,19 @@
                                     function addFN() {
                                         var obj = {
                                             
-                                            category:category,
+                                            catagory:category,
                                             title:title,
                                             imgUrl:imgUrl,
                                             size: "Medium",
                                             color: "Blue",
+                                            item: "6317870",
+                                            new_price: "12.64",
                                             pre_price:pre_price,
                                             delivery: new Date()
                                         }
                                         oArr.push(obj) ;
                                         console.log(oArr) ;
-                                        localStorage.setItem("CartData",JSON.stringify(oArr));
+                                        localStorage.setItem("cartData",JSON.stringify(oArr));
                                         alert("Product Added In Your bag") ;
                                         add.style.backgroundColor="green" ;
                                         add.innerText="Added To Your Bag"
@@ -111,9 +108,6 @@
 
                                         
                                     }
-
-
-
                               div1.append(img,star,ca,t,p,f,sel,sz,clr,add,x) ;
                               container.append(div1)
 
