@@ -68,4 +68,4 @@ function bottom () {
 `
 }
 
-export default bottom;
+export {bottom};
