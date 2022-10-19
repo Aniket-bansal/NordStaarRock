@@ -39,9 +39,7 @@
 <li>Cart Functionality</li>
 </ul>
 
-<h1>About this project</h1>
 
-<p>This project is the clone of website NordstormRack.com which is a clothing and accessories selling website . This is a collaborative project consisting of 6 team members together which we clone the website with its functionalities and features. We have basically worked on the front-end using the tech stacks like HTML , JavaScript, Css </p>
 
 <h1> Some Good Screenshots Of Our Application</h1>
 
